@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>按揭金融导论：为什么每一笔地产交易都绕不开负债（Introduction to Mortgage Finance） · 微出国 · 学</title>
+<link rel="stylesheet" href="../assets/style.css?v=1788891005">
+<script>var PREV_URL="ch12-agency-law.html";var NEXT_URL="ch14-interest-rates-mortgages.html";</script>
+<link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body class="vv">
+<header class="vv-header">
+  <a class="vv-brand" href="../index.html"><svg viewBox="102.305 90.391 73.617 59.957" width="28" aria-hidden="true" class="mark">
+<path fill="#30D9C4" d="M 107.894531 95.808594 L 127.277344 95.808594 C 127.277344 95.808594 129.507812 95.628906 130.835938 97.679688 C 131.585938 98.910156 131.65625 100.316406 131.082031 101.546875 L 121.609375 117.953125 C 121.609375 117.953125 120.335938 120.65625 117.011719 120.824219 C 113.714844 120.910156 112.242188 118.40625 112.242188 118.40625 L 103.722656 103.652344 C 103.722656 103.652344 102.304688 101.792969 103.09375 99.332031 C 103.878906 96.878906 106.148438 95.773438 107.894531 95.808594 "/>
+<path fill="#0082CA" d="M 115.964844 124.792969 C 115.847656 124.59375 116.09375 124.378906 116.277344 124.519531 C 117.195312 125.21875 118.664062 125.902344 120.683594 125.515625 C 122.164062 125.210938 123.550781 124.296875 124.402344 122.757812 C 125.242188 121.300781 138.8125 97.8125 138.8125 97.8125 C 138.8125 97.8125 141.9375 90.917969 150.207031 90.550781 L 169.96875 90.550781 C 169.96875 90.550781 173 90.390625 174.503906 93.40625 C 175.921875 96.433594 173.941406 98.695312 173.667969 99.109375 C 173.394531 99.523438 142.203125 146.726562 142.203125 146.726562 C 142.203125 146.726562 140.003906 150.347656 135.40625 150.347656 C 130.808594 150.347656 128.707031 146.878906 128.417969 146.398438 C 128.175781 145.992188 118.835938 129.78125 115.964844 124.792969 "/></svg>微出国 · 学</a>
+  <nav><a href="../index.html">路线</a><a href="../slides.html">讲义</a><a href="../docs/" aria-current="page">讲解</a><a href="../drill.html">练习</a><a href="../exam.html">模考</a><a href="../progress.html">进度</a></nav>
+  <button class="theme" onclick="var r=document.documentElement,d=r.getAttribute('data-theme')==='dark';r.setAttribute('data-theme',d?'light':'dark');localStorage.setItem('vv-theme',d?'light':'dark')">◐</button>
+</header>
+<main><a href="ch12-agency-law.html" class="vv-float-nav vv-float-nav--prev" title="上一篇: 代理法：谁替谁做事，谁就得对谁忠诚（Law of Agency）"><span class="vv-float-nav__icon">‹</span><span class="vv-float-nav__card"><small>← 上一篇</small><strong>代理法：谁替谁做事，谁就得对谁忠诚（Law </strong></span></a><a href="ch14-interest-rates-mortgages.html" class="vv-float-nav vv-float-nav--next" title="下一篇: 利率与按揭：从换算好的利率到每月还多少、提前还要罚多少（Interest Rates and Mortgages）"><span class="vv-float-nav__card"><small>下一篇 →</small><strong>利率与按揭：从换算好的利率到每月还多少、提前</strong></span><span class="vv-float-nav__icon">›</span></a><div class="vv-max-dock"><span class="vv-max-dock__hint">键盘 ← → 切页 | Esc 退出</span><button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()">✕ 退出专注</button></div>
+<div class="doc-wrap">
+  <article class="doc">
+    <div class="doc-bar">
+      <p class="crumb"><a href="../index.html">路线</a> › 按揭金融（五章）</p>
+      <div class="doc-bar-actions">
+        <span class="vv-reader-hint">键盘 ← → 翻页</span>
+        <button class="vv-reader-btn vv-aside-btn" onclick="toggleSidebarCollapse()" title="折叠/展开右侧栏">◧ 折叠侧栏</button>
+        <button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()" title="最大化专注阅读 (快捷键 F)">⛶ 专注阅读</button>
+      </div>
+    </div>
+    <h1>按揭金融导论：为什么每一笔地产交易都绕不开负债（Introduction to Mortgage Finance）</h1>
+    <div class="doc-meta"><span class="vv-badge vv-badge--accent">按揭金融（五章） · 练习配比 18%</span><span class="vv-badge">10,711 字</span><span class="vv-badge">约 21 分钟</span></div>
+    <blockquote>
+<p><strong>本章地位</strong>：按揭金融五章（ch13–ch17）的开篇，讲<strong>原理</strong>——为什么地产交易离不开负债、
+资本市场怎么运作、按揭市场有哪些参与者、还款计划有哪几种谱系、名义利率与周期利率怎么换算。
+<strong>核贷条件、压力测试、保险按揭现行规则</strong>在 ch17 展开，本篇只带过一句；
+<strong>摊还表全表计算</strong>在 ch14/ch16 展开，本篇只讲清楚换算原理并算到底两个自设示例。
+核实日期：<strong>2026-09-05</strong>，出处见文末源表。</p>
+</blockquote>
+<h2 id="_1">一、这一章要回答的问题：钱从哪儿来</h2>
+<p>买一套房子，付的是一次性的一大笔钱，换来的是未来几十年分期兑现的好处——自己住省下的房租，
+或者出租收到的租金。买家很少能一次性拿出全款，卖家也很少愿意等买家慢慢攒够钱。
+<strong>这个缺口只有一个办法能补上：负债。</strong> 于是几乎每一笔地产交易背后都站着两类投资人——
+<strong>业主投资人</strong>（出的是自有资金 equity，图的是使用权、租金回报、增值）和
+<strong>贷款人投资人</strong>（出的是借款 debt，图的是利息与本金按约定收回）。</p>
+<p>贷款人要的东西很简单也很挑剔：<strong>利息要按时收到，本金要能收得回来</strong>。
+当贷款人为保证收回本金而在借款人的产权上设定了一项权利——一旦借款人违约，
+贷款人有权在清偿在先债权后接管这项产权——<strong>这项借款就叫按揭（mortgage）</strong>。
+按揭不是唯一的地产融资方式（还有分期付款合同 agreement for sale、售后回租、股权合伙等），
+但它是目前最常见的一种，这也是这五章教材专门给它开辟五章篇幅的原因。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">ℹ️</span></p>
+<div>
+<p><strong>「教材是结构，不是真相」在这一章最直接的体现</strong></p>
+<p>这一章几乎全是<strong>金融原理</strong>：一级市场／二级市场的划分、按揭作为投资的特征、
+还款计划的谱系、名义与周期利率的换算——这些是数学关系与市场机制，
+<strong>本身不会因为哪部法律修订而改变</strong>，所以本篇的护城河不在「教材哪句话过时了」，
+而在<strong>教材举的具体公司名字</strong>：市场参与者一直在并购、改名、退出，
+教材©2020 举的例子到 2026 年已经有几个不在了（见下文第三节）。</p>
+</div>
+</div>
+<h2 id="_2">二、资本市场：储蓄者与借款人怎么被撮合到一起</h2>
+<p>任一时间段里，经济中总有一部分人（或机构）当期收入超过当期支出——<strong>储蓄者</strong>；
+也总有另一部分人当期支出超过当期收入——<strong>借款人</strong>。<strong>资本市场</strong>就是撮合这两群人的机制，
+按揭市场只是资本市场里的一个分市场，和股票、债券、定存、外汇一样，
+在争夺同一批储蓄者的资金。</p>
+<p>储蓄者把钱交给借款人，通常走三条路径：<strong>直接借贷</strong>（父母借钱给子女买房）、
+<strong>经纪撮合</strong>（按揭经纪人找到想投资的人和想融资的开发商）、<strong>存款中介</strong>
+（储户把钱存进银行，银行再把钱贷给买车的人）——第三条是当代最主流的路径。</p>
+<p>利率是这场撮合的价格：对借款人是<strong>成本</strong>，对储蓄者是<strong>回报</strong>。当按揭市场的资金需求上升，
+利率会被推高，从而把资金从资本市场的其他角落（债券、股票）吸引过来；
+需求下降时反过来。因此按揭利率<strong>从不是孤立定出来的</strong>，它和整个资本市场的利率水平互相牵动。</p>
+<p>在这套利率结构里，<strong>风险与期限决定相对高低</strong>：政府公债违约风险几乎为零，利率最低；
+按揭的承诺可靠性不如政府，且流动性差、管理成本高，所以<strong>同期限的优质第一按揭利率通常高于政府公债收益率</strong>；
+二按、三按风险更高，利率还要再往上加。贷款人给一笔按揭定价时，实际在综合三样东西：
+<strong>资金本身的机会成本</strong>（市场当期利率水平）、<strong>对承担这笔具体风险的补偿</strong>、
+<strong>管理这笔贷款的成本分摊</strong>。这也是为什么同样是"按揭"，看物业类型（自住 vs 收益型 vs 商业用地）、
+看借款人信用、看抵押物估值比例，报价会不一样——但<strong>多数贷款机构不会为单笔贷款单独调利率</strong>，
+更常见的做法是维持统一的市场利率，转而在<strong>非利率条件</strong>（期限、摊还年限、要不要保险）上做文章
+来消化风险差异。</p>
+<h2 id="2026">三、按揭市场的参与者：教材举的公司名，2026 年还剩几个</h2>
+<p>按揭市场分<strong>一级市场</strong>（贷款人直接把钱借给购房者，形成新的按揭）和<strong>二级市场</strong>
+（已经存在的按揭被当作金融资产买卖，买家买到的是收取未来还款流的权利）。
+政府推出的<strong>按揭担保证券（Mortgage-Backed Securities, MBS）</strong>与
+<strong>Canada 按揭债券（Canada Mortgage Bonds, CMBs）</strong>这类工具，就是为了让小额投资人也能间接参与二级市场，
+不必自己去找、去管一整笔按揭。</p>
+<p>一级市场的放贷方，按来源可以分成几类，这套<strong>分类框架长青</strong>，但框架里点名的具体公司在 2026 年已经洗了一轮牌：</p>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>教材©2020 怎么举例</th>
+<th>2026 年现状（本篇核实结论）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>机构贷款人</td>
+<td>银行、信用社／合作信用社、信托与贷款公司、寿险公司</td>
+<td>分类框架不变；银行仍是按揭资金最大单一来源</td>
+</tr>
+<tr>
+<td>专营按揭公司（monoline）</td>
+<td>举例 MCAP、First National、<strong>Street Capital</strong></td>
+<td><strong>Street Capital Bank 已于 2019 年被 RFA 收购</strong>，现为 RFA Bank of Canada／RFA Mortgage Corporation 的一部分；2025-09-15 起 RFA Capital 进一步与 Artis REIT 合并，组建上市公司 RFA Financial（UWS-0096）</td>
+</tr>
+<tr>
+<td>私营按揭保险公司</td>
+<td>举例 <strong>Genworth Financial Canada</strong>、Canada Guaranty</td>
+<td><strong>Genworth Canada 已更名为 Sagen</strong>（品牌与业务延续，公司未消失）；Canada Guaranty 名称不变、仍在运营（UWS-0094／UWS-0095）</td>
+</tr>
+<tr>
+<td>私人贷款人</td>
+<td>个人投资人、卖方融资（VTB）、按揭投资集团、按揭投资公司（MICs）、养老基金</td>
+<td>框架不变；BC 的 MIC 数量与规模一直在变化，具体家数与放贷总量不是长青事实，本篇不给快照数</td>
+</tr>
+<tr>
+<td>政府</td>
+<td>联邦与省级政府直接放贷项目</td>
+<td>框架不变，具体项目名称与条件时效性高，见 ch17</td>
+</tr>
+</tbody>
+</table>
+<p><strong>这张表最容易踩的坑不是记错分类，是把教材举的公司名当成现在还存在的公司照抄给客户。</strong>
+分类框架（机构贷款人 / 专营按揭公司 / 保险公司 / 私人贷款人 / 政府）是长青知识，
+<strong>具体点名哪家公司，2026 年要用现行名字</strong>。</p>
+<div class="vv-callout vv-callout--warn">
+<p><span class="vv-callout__icon">⚠️</span></p>
+<div>
+<p><strong>「Genworth」这个旧名出现在客户面前，该怎么办</strong></p>
+<p>如果客户拿着一份旧资料问「Genworth 保险是什么」，正确的反应不是照本宣科，
+而是告诉客户：<strong>这是 Sagen 的曾用名，公司还在，只是换了牌子</strong>。
+教材举的例子只当历史读；<strong>卷面</strong>上如果考「私营按揭保险公司有哪几家」，
+答的是这个分类事实本身（有 CMHC 之外的私营保险人参与）而不是公司名字对错；
+<strong>实务</strong>上给客户提供联系方式或产品资料，必须用现行公司名，用错名字客户联系不到人。</p>
+</div>
+</div>
+<p>按揭投资集团（Mortgage Investment Corporations, MICs）值得单独说一句：投资人买 MIC 的股份，
+MIC 把集合起来的资金放贷给借款人，<strong>《所得税法》为它设了资格规则，条件是把 100% 净收入分配给投资人</strong>。
+MICs 常年是被主流机构挡在门外的借款人（信用记录有瑕疵、自雇难验证收入、抵押物类型特殊）的重要出口，
+利率高于机构贷款人，因为承担的违约风险更高、抵押物或借款人条件通常更边缘。</p>
+<h2 id="_3">四、按揭作为一种投资：五个特征，决定了谁会来放贷</h2>
+<p>从贷款人的角度看，按揭这种投资天生带着五个特征，理解它们能解释<strong>为什么这个市场
+由少数大机构主导，小投资人很难直接参与</strong>：</p>
+<ol>
+<li><strong>独一无二（unique）</strong>：每一笔按揭的风险取决于借款人信用、抵押物状况、合同条款三样的
+   独特组合，不像政府公债那样彼此可以互换。</li>
+<li><strong>难以转手（illiquid）</strong>：二级市场虽然存在（MBS/CMB），但一笔具体的按揭要单独找买家、
+   议价、过户，远比卖一张公债麻烦。</li>
+<li><strong>再投资难题</strong>：借款人每月还的钱是本金加利息的小额流水，<strong>大机构</strong>手上有成百上千笔按揭，
+   凑起来能立刻放出新的按揭；<strong>小投资人</strong>手上只有一两笔，每月收到的小额还款只能先存进
+   利息更低的储蓄账户，等积攒够了才能放出下一笔——这段等待期里，实际到手的收益率被拉低。</li>
+<li><strong>管理成本高</strong>：放款前要评估、要做法律文件、要看地契；放款后要按月对账、追缴逾期，
+   这些行政成本不会因为贷款规模小而等比例缩小，<strong>大机构靠规模摊薄单笔成本，小投资人摊不了</strong>。</li>
+<li><strong>资本门槛高</strong>：要放出一笔完整的按揭动辄要几万到几十万，很多有意愿的储蓄者根本凑不出这个数。</li>
+</ol>
+<p>这五条合在一起解释了这个市场的现实形状：<strong>一头是大批小投资者根本进不来，
+中间是少数中等规模的参与者，另一头是数量不多但资金规模巨大的机构在主导</strong>。
+MBS、CMB 与 MIC 这些工具存在的意义，正是把小投资人的钱<strong>间接</strong>引进这个市场——
+买一份 MBS 份额或 MIC 股份，等于买到了一篮子按揭的收益权，而不必自己去扛
+上面五条难题里的任何一条。</p>
+<h2 id="_4">五、还款计划的谱系：从「只还利息」到「本息同还」</h2>
+<p>按揭合同要写清楚：借多少（本金）、按什么利率算利息、多久还一次、每次还多少。
+不同的还款设计，本质上是在<strong>贷款人的收款风险</strong>与<strong>借款人的现金流压力</strong>之间做不同的取舍：</p>
+<table>
+<thead>
+<tr>
+<th>还款类型</th>
+<th>每期还什么</th>
+<th>谁在冒险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>只计息不还款（interest accruing）</strong></td>
+<td>期间一分钱不付，到期一次性还本付息（利息滚入本金再生息）</td>
+<td>贷款人：整个期间本金和利息都没拿到手，风险最高，因此这类贷款期限通常很短（一年以内）</td>
+</tr>
+<tr>
+<td><strong>纯利息贷款（interest only）</strong></td>
+<td>每期只付利息，本金到期一次还清</td>
+<td>贷款人：本金始终悬在外面没收回，但至少定期收到利息；常见于开发建设期融资</td>
+</tr>
+<tr>
+<td><strong>直线本金摊还（straight-line）</strong></td>
+<td>每期还等额本金＋逐期递减的利息，总还款额逐期变小</td>
+<td>早期还款压力最大，落在借款人身上；因为多数人预期收入是逐年上升而不是下降，这种方式在住宅贷款里并不流行</td>
+</tr>
+<tr>
+<td><strong>等额本息（constant payment）</strong></td>
+<td>每期还款总额固定，早期利息占大头、后期本金占大头</td>
+<td>双方风险相对均衡，是目前住宅按揭的主流形式</td>
+</tr>
+</tbody>
+</table>
+<p><strong>等额本息（constant payment）</strong>还要再分两种情形：<strong>全额摊还（fully amortized）</strong>——
+摊还期＝合同期限，到期正好还清；<strong>部分摊还（partially amortized）</strong>——
+摊还期长于合同期限，到期时还有一大笔余额（<strong>balloon payment</strong>）要一次性偿还或续约。
+BC 常见的「25 年摊还、5 年合同期」按揭就是部分摊还的典型：借款人按 25 年的节奏还款，
+但只签 5 年，5 年到期时余额要么续约、要么转贷到别的贷款人。</p>
+<p><strong>摊还期拉长会降低每期还款额，但代价是总利息支出增加、还清时间变长</strong>——
+这条权衡关系在 ch14 会展开到具体数字，本篇只需要记住方向：
+<strong>摊还期越长，月供越轻，总利息越贵</strong>。</p>
+<div class="vv-callout vv-callout--danger">
+<p><span class="vv-callout__icon">✕</span></p>
+<div>
+<p><strong>别替客户算精确的月供数字</strong></p>
+<p>摊还期、合同期、利率复利频率哪怕差一点，算出来的月供都会不一样，
+而这类计算属于持牌按揭经纪或贷款机构的专业范围。持牌地产代表的职责是
+<strong>帮客户理解这些概念如何影响他们的选择</strong>，不是替客户出具具体的贷款计算结果——
+算错一个数字、客户据此做了决定，责任由你承担。</p>
+</div>
+</div>
+<h2 id="_5">六、开放式与封闭式、固定与浮动，以及一串「创新」还款工具</h2>
+<p><strong>开放式（open）</strong>按揭允许借款人随时提前还清全部或部分本金，通常只收很小的手续费，
+代价是利率比同期限的封闭式按揭高；<strong>封闭式（closed）</strong>按揭禁止或限制提前还款，
+利率更低，但提前还款要付罚金——<strong>除非落进合同允许的额度，或落进《利息法》给的那道口子</strong>
+（下一节详细展开）。</p>
+<p><strong>固定利率（fixed）</strong>按揭合同期内利率不变，借款人图的是确定性；<strong>浮动利率（variable，
+又称 adjustable）</strong>按揭的利率随银行的基准放贷利率（prime rate）浮动，
+prime rate 又跟随<strong>加拿大银行（Bank of Canada）设定的政策利率（policy interest rate）</strong>变化——
+<strong>这条链条是机制性的，长期成立</strong>，但政策利率本身每隔几周就可能调整一次，
+<strong>具体是多少，永远以 Bank of Canada 当期公告为准，不要在材料里写死一个数字</strong>。
+一般情况下浮动利率合同利率低于固定利率合同利率（贷款人把未来利率变动的风险转嫁给了借款人），
+只有在短期通胀预期急剧升高的少见时段，两者关系才会反转。</p>
+<p>除了标准的固定/浮动等额本息按揭，市场上还有一串「变体」，各自解决一个具体的现实需求：</p>
+<ul>
+<li><strong>卖方融资（Vendor Take-Back, VTB）</strong>：卖方自己当贷款人，通常在买家融资有缺口时使用；</li>
+<li><strong>递增付款按揭（Graduated Payment Mortgage）</strong>：早期还款少、逐年递增，帮暂时收入较低的
+  买家先进场；</li>
+<li><strong>反向年金按揭（Reverse Annuity Mortgage, RAM）</strong>：贷款人反过来按期付钱给借款人（通常是
+  已还清房贷的退休老人），到期或身故后从物业售出款或遗产中一次结清——<strong>给的是现金流，
+  拿走的是未来的净值</strong>；</li>
+<li><strong>组合式按揭（Combination Mortgage）</strong>：合同期内一部分固定、一部分浮动，按比例分散风险；</li>
+<li><strong>房屋净值贷款／信用额度（Home Equity Loan / HELOC）</strong>：以物业净值作抵押，
+  额度通常是估值或成交价（取低者）的一个百分比再扣掉现有按揭余额，用途不限于买房；</li>
+<li><strong>建筑贷款（Construction Financing）</strong>：按工程进度分批放款而不是一次付清，
+  通常按纯利息方式计息，开发商完工出售后一次性还清；</li>
+<li><strong>参与型按揭（Participation Mortgage）／共享增值按揭（Shared Appreciation Mortgage,
+  SAM）</strong>：贷款人换取物业未来收益或增值的一部分份额，作为让利率更低的交换条件，
+  市场下行时贷款人不愿意做这类安排。</li>
+</ul>
+<p>这一串工具的<strong>底层逻辑相同</strong>：还款结构是可以在贷款人与借款人之间重新分配风险与现金流的，
+标准的等额本息只是这个谱系里最常见的一点，不是唯一答案。</p>
+<h2 id="_6">七、名义利率与周期利率：《利息法》管住的那道换算题</h2>
+<p>按揭合同上写的利率，从来不是孤零零一个百分数，它总是带着一个"复利频率"：
+<strong>「年利率 X%，按半年复利」</strong>才是一句完整的利率陈述。这里有三个必须分清楚的概念：</p>
+<ul>
+<li><strong>名义年利率（nominal rate, 记作 j_m）</strong>：按年报出来的那个百分数，
+  下标 m 表示一年复利多少次；</li>
+<li><strong>周期利率（periodic rate, i）</strong>：每个复利周期实际适用的利率，
+  <strong>i = j_m ÷ m</strong>；</li>
+<li><strong>等价年利率（effective annual rate, EAR，也叫 j₁）</strong>：把周期复利效应真正滚算一年后，
+  相当于按年复利一次的那个百分数，<strong>EAR = (1 + i)^m − 1</strong>，恒 <strong>大于等于</strong> 名义年利率
+  （复利频率越高，两者差距越大）。</li>
+</ul>
+<p><strong>为什么必须分清楚</strong>：《利息法》（Interest Act, R.S.C. 1985, c. I-15）<strong>s. 6</strong> 规定，
+按揭合同上的利率必须以<strong>按年或按半年复利</strong>的方式披露，否则这部分利息<strong>根本不能收</strong>
+（UWS-0093）。这条规定的历史后果是，<strong>加拿大住宅按揭市场几乎全部用 j₂（按半年复利的
+名义年利率）报价</strong>，哪怕借款人实际是按月还款。这就制造了一个陷阱：<strong>合同上的 j₂ 数字，
+不能直接除以 12 当成月利率用</strong>，因为半年复利和月复利是两种不同的计息节奏。</p>
+<div class="vv-callout vv-callout--warn">
+<p><span class="vv-callout__icon">⚠️</span></p>
+<div>
+<p><strong>「年利率除以 12」是最常见的算错方式</strong></p>
+<p>j₂ = 6.00% 不等于「月利率 0.5%」。正确做法是先求半年周期利率 i_sa = j₂ ÷ 2，
+再把这个半年利率换算成<strong>等价的</strong>月复利周期利率——见下面案例一。
+差距看起来很小（零点几个百分点的零头），但按 25 年摊还乘出来，
+累积的利息差不是零头。</p>
+</div>
+</div>
+<p><strong>案例一：j₂ 报价 → 月供计息用的周期利率</strong></p>
+<p>买家 Grace 拿到贷款机构 A 的报价：「年利率 5.90%，按半年复利」（j₂ = 5.90%），
+但她的还款是按月的。要拿到真正适用于月供计算的周期利率，分两步：</p>
+<pre><code>第一步：半年周期利率  i_sa = j₂ ÷ 2 = 5.90% ÷ 2 = 2.95%
+第二步：换算成月复利的等价周期利率
+        i_mo = (1 + i_sa)^(1/6) − 1
+             = (1.0295)^(1/6) − 1
+             ≈ 0.4857%
+</code></pre>
+<p>（半年＝6 个月，所以指数取 1/6。）如果 Grace 图省事直接拿 5.90% ÷ 12 ≈ 0.4917% 当月利率，
+会比正确值 0.4857% <strong>偏高</strong>——差距虽小，但用来算几十万本金、25 年期限的月供，
+偏差会被放大成实实在在的钱。</p>
+<p><strong>案例二：不同复利频率的报价，怎么比出真正谁便宜</strong></p>
+<p>Grace 同时拿到贷款机构 E（一家非银行贷款机构）的报价：「年利率 5.85%，按月复利」
+（j₁₂ = 5.85%）。乍一看 5.85% &lt; 5.90%，机构 E 似乎更便宜——<strong>但两个报价的复利频率不同，
+直接比名义利率的数字是在比较两个不同的东西</strong>。要公平比较，必须先把两者都换算成
+等价年利率（EAR）：</p>
+<pre><code>机构 A（j₂ = 5.90%，半年复利）
+  EAR_A = (1 + 2.95%)^2 − 1 = (1.0295)^2 − 1 ≈ 5.9870%
+
+机构 E（j₁₂ = 5.85%，月复利）
+  EAR_E = (1 + 5.85%/12)^12 − 1 = (1.004875)^12 − 1 ≈ 6.0094%
+</code></pre>
+<p><strong>结果反直觉：名义利率更低的机构 E，真实年成本反而更高</strong>（6.0094% &gt; 5.9870%）。
+复利频率越高，同样的名义利率滚出来的真实成本就越高——这正是为什么<strong>比较不同贷款机构的
+报价时，唯一可靠的办法是把它们都换算成等价年利率再比</strong>，不能只看合同上印的那个百分数。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">🔧</span></p>
+<div>
+<p><strong>给客户的动作，不是给客户算出这道题</strong></p>
+<p>上面两个例子演算给你看的是<strong>原理</strong>：为什么名义利率不能直接拿来比、拿来当月利率用。
+到了真客户面前，你的动作是<strong>提醒客户找按揭经纪或贷款机构书面确认真实的等价年利率
+（APR 或 EAR）再做比较</strong>，而不是自己拿计算器给出一个精确数字——
+这条界线在<strong>卷面</strong>上是概念题，在<strong>实务</strong>里是转介的边界。</p>
+</div>
+</div>
+<p><strong>《利息法》s. 10 的另一道口子</strong>：住宅按揭合同期内，如果某笔按揭的合同约定五年后
+才到期，那么<strong>从放款满五年那天起，个人借款人</strong>（法人借款人不适用这条）有权随时提前
+还清全部欠款，<strong>只需额外多付三个月利息作为「提前告知」的代价</strong>（UWS-0093）。
+这条规定 2008 年最后修订之后<strong>没有再变过</strong>，教材©2020 的描述与现行条文完全一致——
+这是本章少见的一处「教材照抄现行法也不会错」。<strong>注意它只保护个人（individuals），
+不保护公司借款人</strong>，且现在多数住宅按揭合同期都在 5 年以内，这条条款在实务里较少直接用上。</p>
+<h2 id="_7">八、柜台上怎么做</h2>
+<ol>
+<li><strong>报价上出现的 j_m，先问清楚复利频率与付款频率是否一致</strong>；不一致时，
+   提醒客户请贷款机构或经纪给出等价年利率再比较，不要自己动手算精确数字。</li>
+<li><strong>教材举的公司名字，说给客户听之前先确认还在不在、叫不叫这个名字</strong>——
+   贷款机构、保险公司这个市场并购活跃，一个曾经准确的公司名，几年后可能已经不对。</li>
+<li><strong>摊还期与合同期是两件事</strong>：客户问"我这笔贷款几年还完"，答的是摊还期；
+   客户问"我这笔贷款几年要重新谈"，答的是合同期——部分摊还按揭这两个数字不一样。</li>
+<li><strong>提前还款条款因合同而异</strong>：封闭式按揭具体允许多少提前还款额度、要不要罚金，
+   一律回合同条文与《利息法》s. 10 的兜底权利，不要凭经验估。</li>
+<li><strong>建筑贷款、参与型按揭、SAM 这类结构化融资</strong>遇到了，先识别出它不是标准按揭，
+   转介给相应的专业人士，不要用标准按揭的逻辑去套。</li>
+</ol>
+<h2 id="_8">九、两个容易踩空的场景</h2>
+<p><strong>场景一：信用记录有瑕疵的买家</strong>。Marco 是自雇木工，报税收入偏低难以通过银行的常规
+收入验证，被两家银行拒贷。他找到一家 MIC，愿意基于房产估值（而不是他的报税收入）
+放出一笔二按，利率明显高于银行按揭。这不是"MIC 在坑人"，而是<strong>风险定价的正常反映</strong>——
+MIC 承担了银行不愿承担的验证风险，用更高的利率作补偿。持牌地产代表在这里的角色是
+<strong>帮 Marco 理解这笔贷款成本更高的原因</strong>，并提醒他这类私人贷款通常合同期短（1–3 年），
+到期需要重新安排融资，不能当成长期方案，同时把具体条款的把关工作交给他自己的
+按揭经纪或律师。</p>
+<p><strong>场景二：新盘开发商的建筑贷款</strong>。开发商 Cedar Homes 正在建一栋公寓楼，
+贷款机构按工程进度分批放款（而不是一次性放出全款），且这笔建筑贷款是按纯利息方式计息——
+开发商在施工期只需支付利息，本金留到项目完工出售后一次性偿还。持牌代表在给潜在买家
+介绍楼花时，如果客户问"开发商这个项目的资金安不安全"，可以说明<strong>建筑贷款通常是第一按揭、
+分期放款、纯利息计息</strong>这套惯常结构，但<strong>具体这一个项目的贷款条件与开发商财务状况</strong>
+不是持牌代表应该评估或担保的事项。</p>
+<hr />
+<h2 id="_9">术语双语对照</h2>
+<table>
+<thead>
+<tr>
+<th>中文</th>
+<th>英文</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>按揭</td>
+<td>mortgage</td>
+<td>贷款人取得的、以借款人产权作抵押的权利担保</td>
+</tr>
+<tr>
+<td>一级按揭市场</td>
+<td>primary mortgage market</td>
+<td>新按揭在这里被创设</td>
+</tr>
+<tr>
+<td>二级按揭市场</td>
+<td>secondary mortgage market</td>
+<td>已存在的按揭在这里被买卖</td>
+</tr>
+<tr>
+<td>按揭担保证券</td>
+<td>Mortgage-Backed Securities (MBS)</td>
+<td>联邦政府推出，帮小投资人间接参与按揭市场</td>
+</tr>
+<tr>
+<td>加拿大按揭债券</td>
+<td>Canada Mortgage Bonds (CMBs)</td>
+<td>2001 年推出，CMHC 相关计划</td>
+</tr>
+<tr>
+<td>专营按揭贷款公司</td>
+<td>monoline lender</td>
+<td>只做按揭业务，无门店，靠经纪渠道</td>
+</tr>
+<tr>
+<td>按揭投资集团</td>
+<td>Mortgage Investment Corporation (MIC)</td>
+<td>依《所得税法》资格规则运作</td>
+</tr>
+<tr>
+<td>只计息贷款</td>
+<td>interest accruing loan</td>
+<td>期间零还款，到期一次性还本付息</td>
+</tr>
+<tr>
+<td>纯利息贷款</td>
+<td>interest only loan</td>
+<td>期间只付利息，本金到期一次还清</td>
+</tr>
+<tr>
+<td>直线本金摊还</td>
+<td>straight-line principal reduction</td>
+<td>每期等额本金＋递减利息</td>
+</tr>
+<tr>
+<td>等额本息</td>
+<td>constant payment mortgage</td>
+<td>每期还款总额固定</td>
+</tr>
+<tr>
+<td>全额摊还 / 部分摊还</td>
+<td>fully amortized / partially amortized</td>
+<td>摊还期＝/≠合同期</td>
+</tr>
+<tr>
+<td>尾款</td>
+<td>balloon payment</td>
+<td>部分摊还到期时的一次性余额</td>
+</tr>
+<tr>
+<td>开放式 / 封闭式按揭</td>
+<td>open / closed mortgage</td>
+<td>能不能自由提前还款</td>
+</tr>
+<tr>
+<td>名义利率</td>
+<td>nominal interest rate (j_m)</td>
+<td>按年报出、标注复利频率的利率</td>
+</tr>
+<tr>
+<td>周期利率</td>
+<td>periodic rate (i)</td>
+<td>i = j_m ÷ m</td>
+</tr>
+<tr>
+<td>等价年利率</td>
+<td>effective annual rate (EAR / j₁)</td>
+<td>(1+i)^m − 1</td>
+</tr>
+<tr>
+<td>政策利率</td>
+<td>policy interest rate</td>
+<td>Bank of Canada 设定，银行 prime rate 随之浮动</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vs">教材 vs 现行对照表</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>教材©2020 怎么说</th>
+<th>2026 现行是什么</th>
+<th>出处 UWS</th>
+<th>生效/核实日</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>私营按揭保险公司举例 Genworth Financial Canada</td>
+<td>Genworth 已更名 <strong>Sagen</strong>，业务与品牌延续，未消失</td>
+<td>UWS-0094</td>
+<td>2026-09-05</td>
+</tr>
+<tr>
+<td>2</td>
+<td>专营按揭公司举例 Street Capital</td>
+<td>Street Capital Bank 2019 年被 RFA 收购，现为 RFA Bank of Canada／RFA Mortgage Corporation；2025-09-15 起并入上市公司 RFA Financial</td>
+<td>UWS-0096</td>
+<td>2026-09-05</td>
+</tr>
+<tr>
+<td>3</td>
+<td>《利息法》s.6 半年/年复利披露、s.10 五年后个人可提前还清＋三月利息罚金</td>
+<td><strong>原样现行</strong>，2008-06-18 最后修订后未再变，current to 2026-06-21</td>
+<td>UWS-0093</td>
+<td>2026-09-05</td>
+</tr>
+</tbody>
+</table>
+<p><strong>第 3 条是提醒</strong>：不是每条「教材 vs 现行」的对照都会发现冲突，
+本篇这条恰恰是「教材没有错」的确认——但确认这件事本身，也需要回一手源核实一遍，
+不能因为"看起来不会变"就跳过。</p>
+<h2 id="_10">源表（本篇判据）</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>事实</th>
+<th>一手源</th>
+<th>核实日</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>《利息法》s.6：按揭利率须以年或半年复利披露，否则该部分利息不可收取</td>
+<td>laws-lois.justice.gc.ca /eng/acts/I-15/page-1.html（current to 2026-06-21）（UWS-0093）</td>
+<td>2026-09-05</td>
+</tr>
+<tr>
+<td>2</td>
+<td>《利息法》s.10：满五年后个人借款人可提前还清＋三个月利息罚金；法人借款人除外</td>
+<td>同上（UWS-0093）</td>
+<td>2026-09-05</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Sagen® 曾用名 Genworth Canada，是加拿大最大的私营按揭保险公司</td>
+<td>sagen.ca/about/（UWS-0094）</td>
+<td>2026-09-05</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Canada Guaranty Mortgage Insurance Company 现行仍在运营（页面 2026-07-02 更新）</td>
+<td>canadaguaranty.ca（UWS-0095）</td>
+<td>2026-09-05</td>
+</tr>
+<tr>
+<td>5</td>
+<td>RFA 于 2019 年收购 Street Capital Bank；2025-09-15 起 RFA Capital 与 Artis REIT 合并组建 RFA Financial</td>
+<td>rfacapital.ca/about（UWS-0096）</td>
+<td>2026-09-05</td>
+</tr>
+</tbody>
+</table>
+<p><strong>待核清单（禁在对外产物中出现的数字）</strong>：Bank of Canada 当期政策利率与银行当期 prime
+rate 的具体数值（写「以 Bank of Canada 当期公告为准」，不写死一个数字）；BC 现有 MIC
+的具体家数与放贷总规模（市场数据变动快，本篇不给快照数）；插入式压力测试、保险按揭
+LTV／价格上限的现行具体规则（明确留给 ch17，本篇不重复也不抢先给数字）。</p>
+    <div class="doc-nav"><a href="ch12-agency-law.html">← 代理法：谁替谁做事，谁就得对谁忠诚（Law of A</a><a href="ch14-interest-rates-mortgages.html" class="r">利率与按揭：从换算好的利率到每月还多少、提前还要罚多 →</a></div>
+    <div class="doc-src">来源：<code>self</code></div>
+  </article>
+  <aside class="doc-aside">
+    <details class="doc-toc-details" open>
+      <summary class="doc-toc-summary"><span>本页目录</span><span class="doc-toc-icon">▾</span></summary>
+      <div class="toc"><div class="toc">
+<ul>
+<li><a href="#_1">一、这一章要回答的问题：钱从哪儿来</a></li>
+<li><a href="#_2">二、资本市场：储蓄者与借款人怎么被撮合到一起</a></li>
+<li><a href="#2026">三、按揭市场的参与者：教材举的公司名，2026 年还剩几个</a></li>
+<li><a href="#_3">四、按揭作为一种投资：五个特征，决定了谁会来放贷</a></li>
+<li><a href="#_4">五、还款计划的谱系：从「只还利息」到「本息同还」</a></li>
+<li><a href="#_5">六、开放式与封闭式、固定与浮动，以及一串「创新」还款工具</a></li>
+<li><a href="#_6">七、名义利率与周期利率：《利息法》管住的那道换算题</a></li>
+<li><a href="#_7">八、柜台上怎么做</a></li>
+<li><a href="#_8">九、两个容易踩空的场景</a></li>
+<li><a href="#_9">术语双语对照</a></li>
+<li><a href="#vs">教材 vs 现行对照表</a></li>
+<li><a href="#_10">源表（本篇判据）</a></li>
+</ul>
+</div>
+</div>
+    </details>
+    
+    <h3>同板块</h3><ul class="rel"><li><a href="ch14-interest-rates-mortgages.html">利率与按揭：从换算好的利率到每月还多少、提前还要罚多少（Interest Rat</a></li><li><a href="ch15-mortgage-law.html">按揭到底是什么、违约之后会怎样（Introduction to Mortgage</a></li><li><a href="ch16-mortgage-analysis.html">地产实务中的按揭分析：报价背后那份没写在合同里的价值（Mortgage Anal</a></li><li><a href="ch17-underwriting-qualification.html">按揭核贷与借款人资格（Mortgage Underwriting and Bor</a></li></ul>
+    <a class="deck-cta" href="../slides.html?deck=ch13-mortgage-finance-intro"><b>先过讲义 →</b><span>24 张 · 含 5 道自测 · 约 22 分钟<br>一屏一个意思，比直接啃全文省力</span></a>
+    <a class="vv-btn vv-btn--primary" style="width:100%;margin-top:16px"
+       href="../drill.html?bp=mortgage-finance">练这个板块的题 →</a>
+  </aside>
+</div></main>
+<footer class="foot">
+  <p><b>微出国 · 学</b> — BC 地产牌照（Real Estate Trading Services）备考。<br>
+  内容是学习者视角的整理，不是 UBC Sauder 官方教材；考试以 UBC 现行课程为准，
+  实务以金融服务管理局 (BC Financial Services Authority, BCFSA) 与《地产服务法》(Real Estate Services Act, RESA) 现行文件为准。</p>
+</footer>
+<script>var UP_PATH="../";var BUILD_TIME="1788891005";</script>
+<script>
+if((localStorage.getItem('vv-theme')||'')==='dark')
+  document.documentElement.setAttribute('data-theme','dark');
+
+// 自动版本更新检测：对比 DOM 的 BUILD_TIME 与服务器最新 manifest.json，出现新版本时带时间戳无缝重载绕过 HTTP 磁盘缓存
+(function(){
+  function checkVersion(){
+    var up = typeof UP_PATH !== 'undefined' ? UP_PATH : '';
+    fetch(up + 'assets/manifest.json?t=' + Date.now(), { cache: 'no-store' }).then(function(r){
+      return r.ok ? r.json() : null;
+    }).then(function(m){
+      if(!m || !m.build_time) return;
+      var serverBuild = String(m.build_time);
+      var clientBuild = typeof BUILD_TIME !== 'undefined' ? String(BUILD_TIME) : '';
+      if(clientBuild && serverBuild && clientBuild !== serverBuild){
+        var reloaded = sessionStorage.getItem('vv_reloaded_build');
+        if(reloaded !== serverBuild){
+          sessionStorage.setItem('vv_reloaded_build', serverBuild);
+          var u = new URL(location.href);
+          u.searchParams.set('_v', serverBuild);
+          location.replace(u.href);
+        } else if(!document.getElementById('vv-update-banner')) {
+          var bar = document.createElement('div');
+          bar.id = 'vv-update-banner';
+          bar.className = 'vv-update-banner';
+          bar.innerHTML = '🎉 网站已更新到最新版本，建议按 <b>Ctrl+F5</b> (或 <b>Cmd+Shift+R</b>) 强制刷新页面。<button onclick="location.reload(true)">立即刷新</button>';
+          document.body.prepend(bar);
+        }
+      }
+    }).catch(function(){});
+  }
+
+  checkVersion();
+  document.addEventListener('visibilitychange', function(){
+    if(document.visibilityState === 'visible') checkVersion();
+  });
+  window.addEventListener('focus', checkVersion);
+  setInterval(checkVersion, 5 * 60 * 1000);
+})();
+
+// 页眉登录态。身份服务不在（纯静态托管、或还没起 dev-server）时静默跳过——
+// 内容页是公开的，永远不该因为身份服务缺席而坏掉。
+fetch('/api/me').then(function(r){return r.ok?r.json():null;}).then(function(m){
+  if(!m||document.getElementById('vv-auth'))return;
+  var n=document.querySelector('.vv-header nav');if(!n)return;
+  var e=document.createElement('span');e.id='vv-auth';e.className='auth';
+  e.innerHTML=m.loggedIn
+    ?'<span title="学习记录已跨设备同步">'+m.username+'</span> <a href="/auth/logout">退出</a>'
+    :'<a href="/auth/login?next='+encodeURIComponent(location.pathname)+'">登录</a>';
+  n.after(e);
+}).catch(function(){});
+
+// ── 阅读器增强：专注/最大化模式 & 键盘/手势切页 ──
+(function(){
+  var prevUrl = typeof PREV_URL !== 'undefined' ? PREV_URL : '';
+  var nextUrl = typeof NEXT_URL !== 'undefined' ? NEXT_URL : '';
+
+  function updateMaxBtns(isMax) {
+    var btns = document.querySelectorAll('.vv-reader-btn-max');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isMax ? '✕ 退出专注' : '⛶ 专注阅读';
+    }
+  }
+
+  window.toggleDocMaximize = function() {
+    var root = document.documentElement;
+    var isMax = root.classList.toggle('is-doc-maximized');
+    try { localStorage.setItem('vv_doc_maximized', isMax ? 'true' : 'false'); } catch(e){}
+    updateMaxBtns(isMax);
+  };
+
+  function updateAsideBtns(isCol) {
+    var btns = document.querySelectorAll('.vv-aside-btn');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isCol ? '◨ 展开侧栏' : '◧ 折叠侧栏';
+    }
+  }
+
+  window.toggleSidebarCollapse = function() {
+    var root = document.documentElement;
+    var isCol = root.classList.toggle('is-aside-collapsed');
+    try { localStorage.setItem('vv_aside_collapsed', isCol ? 'true' : 'false'); } catch(e){}
+    updateAsideBtns(isCol);
+  };
+
+  try {
+    if(localStorage.getItem('vv_aside_collapsed') === 'true') {
+      document.documentElement.classList.add('is-aside-collapsed');
+      setTimeout(function(){ updateAsideBtns(true); }, 0);
+    }
+  } catch(e){}
+
+  // 本页目录 <details> 状态记忆
+  var tocDet = document.querySelector('.doc-toc-details');
+  if(tocDet) {
+    try {
+      if(localStorage.getItem('vv_toc_open') === 'false') {
+        tocDet.removeAttribute('open');
+      }
+    } catch(e){}
+    tocDet.addEventListener('toggle', function() {
+      try { localStorage.setItem('vv_toc_open', tocDet.open ? 'true' : 'false'); } catch(e){}
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    var tag = (e.target && e.target.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prevUrl) {
+      location.href = prevUrl;
+    } else if (e.key === 'ArrowRight' && nextUrl) {
+      location.href = nextUrl;
+    } else if (e.key === 'f' || e.key === 'F' || e.key === 'm' || e.key === 'M') {
+      toggleDocMaximize();
+    } else if (e.key === 'Escape' && document.documentElement.classList.contains('is-doc-maximized')) {
+      toggleDocMaximize();
+    }
+  });
+
+  var touchStartX = 0, touchStartY = 0;
+  document.addEventListener('touchstart', function(e) {
+    if (e.touches && e.touches.length === 1) {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  document.addEventListener('touchend', function(e) {
+    if (!e.changedTouches || e.changedTouches.length !== 1) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    var dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > 90 && Math.abs(dy) < 60) {
+      if (dx > 0 && prevUrl) {
+        location.href = prevUrl;
+      } else if (dx < 0 && nextUrl) {
+        location.href = nextUrl;
+      }
+    }
+  }, { passive: true });
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body></html>

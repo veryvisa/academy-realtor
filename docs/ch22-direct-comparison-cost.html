@@ -1,0 +1,991 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>直接比较法与成本法：可比案例怎么选、怎么调、重置成本怎么算（Direct Comparison and Cost Approaches of Appraisal） · 微出国 · 学</title>
+<link rel="stylesheet" href="../assets/style.css?v=1788891005">
+<script>var PREV_URL="ch21-appraisal-intro.html";var NEXT_URL="ch23-income-approach.html";</script>
+<link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body class="vv">
+<header class="vv-header">
+  <a class="vv-brand" href="../index.html"><svg viewBox="102.305 90.391 73.617 59.957" width="28" aria-hidden="true" class="mark">
+<path fill="#30D9C4" d="M 107.894531 95.808594 L 127.277344 95.808594 C 127.277344 95.808594 129.507812 95.628906 130.835938 97.679688 C 131.585938 98.910156 131.65625 100.316406 131.082031 101.546875 L 121.609375 117.953125 C 121.609375 117.953125 120.335938 120.65625 117.011719 120.824219 C 113.714844 120.910156 112.242188 118.40625 112.242188 118.40625 L 103.722656 103.652344 C 103.722656 103.652344 102.304688 101.792969 103.09375 99.332031 C 103.878906 96.878906 106.148438 95.773438 107.894531 95.808594 "/>
+<path fill="#0082CA" d="M 115.964844 124.792969 C 115.847656 124.59375 116.09375 124.378906 116.277344 124.519531 C 117.195312 125.21875 118.664062 125.902344 120.683594 125.515625 C 122.164062 125.210938 123.550781 124.296875 124.402344 122.757812 C 125.242188 121.300781 138.8125 97.8125 138.8125 97.8125 C 138.8125 97.8125 141.9375 90.917969 150.207031 90.550781 L 169.96875 90.550781 C 169.96875 90.550781 173 90.390625 174.503906 93.40625 C 175.921875 96.433594 173.941406 98.695312 173.667969 99.109375 C 173.394531 99.523438 142.203125 146.726562 142.203125 146.726562 C 142.203125 146.726562 140.003906 150.347656 135.40625 150.347656 C 130.808594 150.347656 128.707031 146.878906 128.417969 146.398438 C 128.175781 145.992188 118.835938 129.78125 115.964844 124.792969 "/></svg>微出国 · 学</a>
+  <nav><a href="../index.html">路线</a><a href="../slides.html">讲义</a><a href="../docs/" aria-current="page">讲解</a><a href="../drill.html">练习</a><a href="../exam.html">模考</a><a href="../progress.html">进度</a></nav>
+  <button class="theme" onclick="var r=document.documentElement,d=r.getAttribute('data-theme')==='dark';r.setAttribute('data-theme',d?'light':'dark');localStorage.setItem('vv-theme',d?'light':'dark')">◐</button>
+</header>
+<main><a href="ch21-appraisal-intro.html" class="vv-float-nav vv-float-nav--prev" title="上一篇: 地产估价导论：估价是什么、谁能做、柜台上怎么用（Introduction to Real Estate Appraisal）"><span class="vv-float-nav__icon">‹</span><span class="vv-float-nav__card"><small>← 上一篇</small><strong>地产估价导论：估价是什么、谁能做、柜台上怎么</strong></span></a><a href="ch23-income-approach.html" class="vv-float-nav vv-float-nav--next" title="下一篇: 收益法估价：把一栋出租物业的现金流换算成一个价格（The Income or Investment Approach of Appraisal）"><span class="vv-float-nav__card"><small>下一篇 →</small><strong>收益法估价：把一栋出租物业的现金流换算成一个</strong></span><span class="vv-float-nav__icon">›</span></a><div class="vv-max-dock"><span class="vv-max-dock__hint">键盘 ← → 切页 | Esc 退出</span><button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()">✕ 退出专注</button></div>
+<div class="doc-wrap">
+  <article class="doc">
+    <div class="doc-bar">
+      <p class="crumb"><a href="../index.html">路线</a> › 估价与财务报表</p>
+      <div class="doc-bar-actions">
+        <span class="vv-reader-hint">键盘 ← → 翻页</span>
+        <button class="vv-reader-btn vv-aside-btn" onclick="toggleSidebarCollapse()" title="折叠/展开右侧栏">◧ 折叠侧栏</button>
+        <button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()" title="最大化专注阅读 (快捷键 F)">⛶ 专注阅读</button>
+      </div>
+    </div>
+    <h1>直接比较法与成本法：可比案例怎么选、怎么调、重置成本怎么算（Direct Comparison and Cost Approaches of Appraisal）</h1>
+    <div class="doc-meta"><span class="vv-badge vv-badge--accent">估价与财务报表 · 练习配比 12%</span><span class="vv-badge">14,013 字</span><span class="vv-badge">约 28 分钟</span></div>
+    <blockquote>
+<p><strong>本章地位</strong>：估价三章（ch21–ch23）里的第二章。ch21 讲估价导论与最高最佳用途，
+本篇讲最常用的两种方法——<strong>直接比较法（direct comparison / market approach）</strong>与
+<strong>成本法（cost approach）</strong>——怎么落地到一栋独立屋上；ch23 讲收益法。
+持牌代表在实务里几乎不做正式估价（那是 AIC 执业估价师的领域），
+但<strong>直接比较法背后的调整逻辑，就是每一份 CMA（Comparative Market Analysis）的骨架</strong>，
+这也是本篇把大量篇幅放在「怎么调、按什么顺序调」上的原因。
+核实日期：<strong>2026-09-05</strong>，出处见文末源表。</p>
+</blockquote>
+<h2 id="_1">一、这一章要回答的问题：谁在替谁定价，凭什么</h2>
+<p>一套房子没有像股票那样的公开报价，但买卖双方总要在成交前对"值多少钱"有个判断。
+<strong>估价（appraisal）</strong>就是这个判断的专业化版本：由受过训练的第三方，
+用一套可核查的方法，给出一个"市场价值"的意见。</p>
+<p>制度上有两层角色，<strong>不能混用</strong>：</p>
+<ul>
+<li><strong>持牌估价师（Appraiser, AIC 的 P.App 会员）</strong>：受《加拿大统一专业估价执业准则》
+  （<strong>Canadian Uniform Standards of Professional Appraisal Practice, CUSPAP</strong>）约束，
+  出具正式估价报告，银行放贷、诉讼、保险理赔等场合认的是这份报告。
+  <strong>CUSPAP 现行版本是 CUSPAP 2026，2026-04-01 起对当日及以后完成的全部专业服务约定
+  （含追溯性评估）强制适用</strong>（UWS-0187）。</li>
+<li><strong>持牌地产代表（licensee）</strong>：不受 CUSPAP 约束，做的是 <strong>CMA（Comparative Market Analysis）</strong>——
+  一份给卖家定价参考、给买家出价参考的市场分析，性质更偏"定性"，
+  比正式估价报告简短、非正式得多，且<strong>不能当成正式估价使用</strong>。</li>
+</ul>
+<p><strong>这两者用的底层方法高度重叠</strong>——CMA 几乎全靠直接比较法——所以本篇讲的调整逻辑，
+持牌代表每天都在用；只是<strong>签字的份量不一样</strong>：估价师的报告是专业意见，
+CMA 是给客户参考的市场分析，两者的法律责任与适用场合不同。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">ℹ️</span></p>
+<div>
+<p><strong>BC 的土地转让登记也会留一个"价值"的痕迹，但那不是估价</strong></p>
+<p>在 BC 办理产权转让登记时，申请人要在表格里申报一个物业价值估计（用于计算物业转让税）。
+这个申报值<strong>不是</strong>经过分析的市场价值证据，只能作为一种参考指标——
+双方关系、申报动机都不透明，不能当可比交易的直接证据用。</p>
+</div>
+</div>
+<h2 id="_2">二、直接比较法的核心原理：替代原则</h2>
+<p>直接比较法建立在一个简单的经济学原理上：<strong>在同样的市场条件下，
+获得一件替代品所需的成本，等于为这件商品支付的价格</strong>。</p>
+<p>股票的道理最直观：一股 A 公司的股票值多少钱，看的是市场上其他人正在为同一只股票
+支付多少钱。房地产没有交易所报价，但逻辑一样：估价师找<strong>最近成交的、与待估物业相似的
+物业（可比案例，comparables）</strong>，用它们的成交价来推断待估物业（subject property）的价值。</p>
+<p><strong>这套方法成立的前提，是两个词的准确定义</strong>——"recent" 和 "similar"，
+教材专门用两个小节展开，因为大多数估价错误都出在这两个词被想当然地理解上。</p>
+<h3 id="recent">recent（近期）：没有一个固定的周数或月数</h3>
+<p>"近期"不是一个可以写进公式的固定期限（比如"六个月内"）。它指的是
+<strong>评估日之前、市场供需条件保持相对稳定的那一段时间</strong>。市场剧烈波动的年份，
+"近期"可能只有几周；市场平稳的年份，"近期"可以拉长到六个月甚至一年。</p>
+<div class="vv-callout vv-callout--warn">
+<p><span class="vv-callout__icon">⚠️</span></p>
+<div>
+<p><strong>用统一的价格指数把"不近期"的成交价拉到评估日，是常见的想当然做法</strong></p>
+<p>消费者价格指数、住房价格指数这类通用指数<strong>不能</strong>用来调整某一套具体房产的旧成交价——
+房地产不是同质商品，一套具体物业的涨跌幅和城市大盘的涨跌幅经常不同步。
+判断"近期"该到什么程度，靠的是估价师对<strong>这一个市场</strong>的第一手了解，不是查一个通用指数。</p>
+</div>
+</div>
+<h3 id="similar">similar（相似）：只需要在影响买卖决策的因素上相似</h3>
+<p>"相似"不要求可比案例和待估物业处处一样——<strong>一栋房子刷白墙、一栋刷蓝墙，
+这个差异根本不影响价格，可以直接忽略</strong>。真正需要相似的，是那些会实质性影响
+买卖双方出价的因素，教材把它们分成三组：</p>
+<ol>
+<li><strong>建筑特征</strong>：设计（房间数、动线，而不是建筑风格本身）、建造与维护质量、
+   设备（洗碗机、空调这类固定装置）、房龄；</li>
+<li><strong>地块特征</strong>：自然条件（地势、景观）、周边人工设施的可达性（学校、交通、商店）、
+   地块尺寸（<strong>临街宽度比进深或总面积更重要</strong>——同区两块地，窄而深的那块通常卖得便宜些）；</li>
+<li><strong>产权与交易条件</strong>：有没有非市场化融资（下面详细展开）、买卖双方是不是关联方。</li>
+</ol>
+<p><strong>找可比案例最有效的办法是先限定在同一个街区</strong>——这样地块特征与周边设施这两组差异
+可以直接忽略（对待估物业和可比案例的影响方向一致），只需要比建筑特征。
+跨街区找可比案例，等于把"建立相似性"这一步的工作量翻倍。</p>
+<h3 id="_3">三点检验</h3>
+<p>挑一个可比案例之前，逐条问：</p>
+<ol>
+<li><strong>成交时间是不是近期？</strong></li>
+<li><strong>建筑与地块是不是相似？</strong></li>
+<li><strong>产权与交易条件是不是相似？</strong></li>
+</ol>
+<p>三个都是"是"，才能进入调整环节；有一个是"否"，要么放弃这个案例，要么先想清楚
+能不能通过调整把差异消化掉。<strong>教材建议至少准备四个可比案例</strong>——单一因素的干扰
+（比如某一笔交易里买卖双方关系特殊而不自知）在多个案例互相印证下更容易被发现。</p>
+<h2 id="_4">三、调整的方向：谁比谁强，钱往哪边走</h2>
+<p>找到可比案例后，估价师不能改变待估物业的物理属性，<strong>只能调整可比案例的成交价</strong>，
+把它"调"成待估物业的样子——<strong>待估物业永远是比较的基准，可比案例向它靠拢，
+可比案例之间不互相比较</strong>。</p>
+<p>方向规则（教材 Figure 22.2 的逻辑，本篇用自设情景复述）：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>对可比案例价格的调整</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>待估物业某项特征优于可比案例</strong></td>
+<td>加到可比案例价格上</td>
+</tr>
+<tr>
+<td><strong>可比案例某项特征劣于待估物业</strong></td>
+<td>加到可比案例价格上（与上一行是同一件事的两种说法）</td>
+</tr>
+<tr>
+<td><strong>待估物业某项特征劣于可比案例</strong></td>
+<td>从可比案例价格里减去</td>
+</tr>
+<tr>
+<td><strong>可比案例某项特征优于待估物业</strong></td>
+<td>从可比案例价格里减去（与上一行是同一件事的两种说法）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>记忆的关键不是背这张表，是想清楚方向</strong>：可比案例"更好"的地方，
+它的成交价里已经包含了这份溢价——要把这份溢价减掉，才能让它跟"没有这个优点"
+的待估物业可比；可比案例"更差"的地方，同理要把缺失的价值补上去。</p>
+<div class="vv-callout vv-callout--warn">
+<p><span class="vv-callout__icon">⚠️</span></p>
+<div>
+<p><strong>车位算不算钱，先问"市场会不会为它多付钱"，别用成本替代市场判断</strong></p>
+<p>假设待估物业有一个装修花了 $45,000 的地下影音室，可比案例没有这个装修。
+正确的调整额<strong>不是</strong> $45,000（装修实际花费），而是<strong>市场愿意为这个装修多付多少钱</strong>——
+很可能远低于装修成本，因为下一个买家未必需要这个功能。
+<strong>调整用的是市场证据，不是成本凭证</strong>；这条规则在成本法那一节还会再出现一次，
+因为它是两种方法共有的一个陷阱。</p>
+</div>
+</div>
+<h2 id="_5">四、调整的顺序：为什么必须先处理交易条件，再处理物理特征</h2>
+<p>调整不是想到哪个调哪个，<strong>必须按顺序做</strong>，原因是后面的调整依赖前面调整算出的"干净"价格：</p>
+<ol>
+<li><strong>融资条件（现金等价化, cash equivalency）</strong>：如果卖方提供了低于市场利率的
+   卖方融资（vendor take-back mortgage, VTB），买方等于额外拿到了一份"隐性折扣"，
+   成交价虚高了。要先把这份隐性折扣算出来并扣掉，把成交价换算成<strong>现金等价价格</strong>。</li>
+<li><strong>交易条件（conditions of sale）</strong>：买卖双方是不是关联方、是不是特殊关系交易
+   （父女之间、雇主卖给雇员）——这类交易的成交价不能反映真实市场价值，
+   轻则调整，重则整个案例弃用。</li>
+<li><strong>市场条件／时间（market conditions）</strong>：把"现金等价、交易条件正常"的价格，
+   从成交当天的市场水平，调整到评估日当天的市场水平。</li>
+<li><strong>物理特征（物业本身的建筑与地块差异）</strong>：只有前三步都处理完，
+   剩下的价格差异才纯粹是物理特征造成的，这时候比较建筑与地块的差异才有意义。</li>
+</ol>
+<p><strong>为什么顺序不能反</strong>：如果先调物理特征、再调融资，就是在一个被虚高的价格基础上
+计算物理特征的调整额，物理调整算出来的百分比会被这个虚高的基数拉低估。
+<strong>先把交易本身的"噪音"去掉，剩下的才是一个"干净"的市场价格，物理特征才能公平比较。</strong></p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">🔧</span></p>
+<div>
+<p><strong>卷面上这四步是逻辑框架，实务上不是每一步都会用到</strong></p>
+<p>大多数居民物业交易是全现金或标准银行按揭，没有 VTB，<strong>融资调整多数时候是 $0</strong>；
+双方也多数是无关联的正常交易，<strong>交易条件调整多数时候也是 $0</strong>。
+但"这一步是 $0"和"这一步没有想过"是两件事——<strong>卷面</strong>上考的是有没有按顺序走完
+这四步（哪怕某一步的答案是零），<strong>实务</strong>里漏想一步比漏调一步的后果更隐蔽：
+你不会立刻发现算错，但基数已经悄悄错了。</p>
+</div>
+</div>
+<h3 id="_6">净调整与总调整：一个看起来完美的可比案例，可能根本不是可比案例</h3>
+<p>判断一个可比案例可不可靠，光看<strong>净调整</strong>（把加减都算完之后的净额）会被误导。
+假设评估一栋位于素里（Surrey）的全新独立屋，找到的"可比案例"是本拿比（Burnaby）
+一块滨河的空地，成交价 $1,200,000。因为这块地上没有建筑物，
+估价师要扣掉 $900,000（房屋的市场贡献）；因为它是滨河地段，
+估价师要再加上 $900,000（景观溢价）。</p>
+<pre><code>净调整 = -$900,000 + $900,000 = $0
+总（绝对值）调整 = $900,000 + $900,000 = $1,800,000
+总调整占成交价比例 = $1,800,000 ÷ $1,200,000 = 150%
+</code></pre>
+<p><strong>净调整是 $0，看起来这是个完美的可比案例——但总调整高达 150%，
+说明这两处物业根本不是同一类东西，只是两个巨大的正负调整恰好抵消了。</strong>
+教材给出的经验法则是：<strong>总调整一般不应超过成交价的 20%</strong>（VTB 类融资调整可以例外）。
+调整项越多、总调整占比越高，这个可比案例的支撑力就越弱——
+<strong>可比案例的成交价好比树干，每加一项调整就是往外多长一根树枝，
+树枝越多、越细，能提供的支撑就越薄弱。</strong></p>
+<h2 id="_7">五、案例一：三个可比案例，从成交价算到指示价值</h2>
+<p><strong>下面的物业、日期、金额均为本篇自设的教学示例（2026 年整数假设），不对应任何真实地址或交易。</strong></p>
+<p><strong>待估物业 S</strong>：温哥华都会区某街区，2,000 平方英尺独立式牧场平房，2015 年建成，
+6,000 平方英尺地块，附带一个双车位车库，2 个完整卫浴，原始厨房未翻新，
+地下室没有装修娱乐室。<strong>评估日：2026-06-01</strong>。为演示计算，
+本篇假设该区域近半年市场按月均值 0.5% 稳定增值（<strong>自设假设，非任何官方指数</strong>，
+实务中这类假设必须用同类物业的时间序列成交或配对销售分析自行验证）。</p>
+<p>三个可比案例都在同一街区，满足"三点检验"：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>可比案例 A</th>
+<th>可比案例 B</th>
+<th>可比案例 C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>成交日</td>
+<td>2026-02-01（评估日前 4 个月）</td>
+<td>2026-04-01（评估日前 2 个月）</td>
+<td>2026-05-18（评估日前半个月）</td>
+</tr>
+<tr>
+<td>成交价</td>
+<td>$850,000</td>
+<td>$860,000</td>
+<td>$840,000</td>
+</tr>
+<tr>
+<td>融资</td>
+<td>卖方 VTB，合同利率低于市场（现金等价价值比票面少 $12,000）</td>
+<td>现金交易</td>
+<td>现金交易</td>
+</tr>
+<tr>
+<td>交易条件</td>
+<td>无关联，正常</td>
+<td>无关联，正常</td>
+<td>无关联，正常</td>
+</tr>
+<tr>
+<td>与待估物业的物理差异</td>
+<td>多 1 个半卫浴；地块比待估物业小 500 平方英尺</td>
+<td>只有露天车位，没有车库；多 1 个半卫浴</td>
+<td>地下室没有装修娱乐室（待估物业有）；厨房近期翻新过</td>
+</tr>
+</tbody>
+</table>
+<p><strong>第一步：融资（现金等价化）与交易条件</strong></p>
+<ul>
+<li>A：VTB 使 A 的成交价含有 $12,000 的"低息融资溢价"——A 在融资上优于待估物业，
+  从 A 的价格里<strong>减去 $12,000</strong>。</li>
+<li>B、C：现金交易，融资调整为 $0。</li>
+<li>三个案例都是无关联正常交易，交易条件调整均为 $0。</li>
+</ul>
+<p><strong>第二步：市场条件（时间）</strong>——把每笔成交价从成交当月调整到评估日当月，
+按月均 0.5% 累计：</p>
+<pre><code>A：0.5% × 4 个月 × $850,000 = $17,000（加，因为市场之后又涨了）
+B：0.5% × 2 个月 × $860,000 =  $8,600
+C：0.5% × 0.5 个月 × $840,000 = $2,100
+</code></pre>
+<p>到这一步，三个案例都已经是"现金等价、交易条件正常、按评估日市场水平换算过"的
+<strong>干净价格</strong>：A 为 $855,000（850,000－12,000＋17,000）、B 为 $868,600、C 为 $842,100。</p>
+<p><strong>第三步：物理特征</strong></p>
+<ul>
+<li>A：多 1 个半卫浴（A 优于待估物业）→ 减 $9,000；地块小 500 平方英尺（A 劣于待估物业）→ 加 $6,000。净物理调整 <strong>－$3,000</strong>。</li>
+<li>B：没有车库（B 劣于待估物业）→ 加 $18,000（这个数字怎么来的，见案例三的配对销售分析）；多 1 个半卫浴（B 优于待估物业）→ 减 $5,000。净物理调整 <strong>＋$13,000</strong>。</li>
+<li>C：没有装修娱乐室（C 劣于待估物业）→ 加 $15,000；厨房翻新过（C 优于待估物业）→ 减 $20,000。净物理调整 <strong>－$5,000</strong>。</li>
+</ul>
+<p><strong>评级表汇总</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>可比案例 A</th>
+<th>可比案例 B</th>
+<th>可比案例 C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>成交价</td>
+<td>$850,000</td>
+<td>$860,000</td>
+<td>$840,000</td>
+</tr>
+<tr>
+<td>融资调整</td>
+<td>－$12,000</td>
+<td>$0</td>
+<td>$0</td>
+</tr>
+<tr>
+<td>交易条件调整</td>
+<td>$0</td>
+<td>$0</td>
+<td>$0</td>
+</tr>
+<tr>
+<td>市场条件（时间）调整</td>
+<td>＋$17,000</td>
+<td>＋$8,600</td>
+<td>＋$2,100</td>
+</tr>
+<tr>
+<td>物理特征调整（净）</td>
+<td>－$3,000</td>
+<td>＋$13,000</td>
+<td>－$5,000</td>
+</tr>
+<tr>
+<td><strong>调整后指示价值</strong></td>
+<td><strong>$852,000</strong></td>
+<td><strong>$881,600</strong></td>
+<td><strong>$837,100</strong></td>
+</tr>
+<tr>
+<td>总（绝对值）调整</td>
+<td>$44,000（5.2%）</td>
+<td>$31,600（3.7%）</td>
+<td>$37,100（4.4%）</td>
+</tr>
+<tr>
+<td>净调整</td>
+<td>＋$2,000（0.2%）</td>
+<td>＋$21,600（2.5%）</td>
+<td>－$2,900（0.3%）</td>
+</tr>
+</tbody>
+</table>
+<p>三个指示价值落在 <strong>$837,100 至 $881,600</strong> 之间，三个总调整都远低于 20% 的经验上限，
+说明这三个可比案例整体可靠。</p>
+<p><strong>结论怎么选，不是三个数字平均</strong>：B 的总调整比例最低（3.7%），
+且 B 最主要的一项物理调整——车库 $18,000——<strong>有案例三的配对销售分析直接支持</strong>，
+不是估价师凭经验拍的数字，可靠性比 A、C 里那些"感觉出来"的调整更强；
+综合 A、C 的区间做交叉验证，本例把待估物业 S 的指示价值定为 <strong>$880,000</strong>
+（就近取整，贴近 B 并落在三者区间内）。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">ℹ️</span></p>
+<div>
+<p><strong>不是每一份估价都用平均数</strong></p>
+<p>把三个指示价值加总除以三得到的数字，<strong>不是</strong>这道题的正确解法。
+教材明确提醒：估价师的工作是判断"哪个可比案例最像待估物业、调整最少最可靠"，
+用那个作为主要依据，其余案例做区间验证——机械平均会把一个调整很粗糙的案例
+和一个调整很扎实的案例赋予同样的权重，稀释掉更可靠的那个证据。</p>
+</div>
+</div>
+<h2 id="_8">六、直接比较法的适用范围与局限</h2>
+<p>直接比较法<strong>最适合</strong>同类交易量大的物业——独立屋、公寓单位——因为不缺可比案例。
+它<strong>不适用</strong>或效果差的场景：</p>
+<ul>
+<li><strong>待估物业本身罕见</strong>，市场上很少有类似交易（特殊用途建筑、非典型户型）；</li>
+<li><strong>市场剧烈波动</strong>，导致找不到真正"近期"的可比案例；</li>
+<li><strong>收益型物业</strong>（出租公寓楼、商业物业）：净收益与风险程度在不同物业间差异很大，
+  仅靠"相似"很难站得住——一栋净收益 $100,000 的公寓楼卖 $2,400,000，
+  不代表净收益 $50,000 的另一栋就该卖 $1,200,000（要求回报率可能不同、
+  租约剩余年限也会造成差异）。这类物业更适合用收益法（ch23）。</li>
+</ul>
+<p><strong>共管公寓（strata / condominium）需要额外核对两组因素</strong>，光看单元本身的户型、
+面积、楼龄不够：</p>
+<ol>
+<li><strong>共同区域的权益是否相似</strong>——两个大楼是否都有健身房、泳池、会所这类设施；</li>
+<li><strong>共同费用的分摊方式与项目是否相似</strong>——按面积比例还是按其他方式分摊、
+   暖气算不算在共同费用里、大楼名下有没有额外资产或负债（比如共同区域名下的
+   未用地皮，或者反过来共同区域背着按揭）。</li>
+</ol>
+<p><strong>两个问题都要回答"是"</strong>，才能把两个共管单位当彼此的可比案例。</p>
+<h2 id="_9">七、成本法：另起一条路径算价值</h2>
+<p>成本法的假设听起来很直白：<strong>土地价值 ＋ 建筑物的重置成本 － 折旧 ＝ 市场价值</strong>。
+但这个假设成立是有条件的——<strong>只有当待估物业的现状代表其最高最佳用途时</strong>，
+成本才约等于价值：如果盖一栋楼的成本高于它建成后的市场价值，新开发会停下来，
+直到房价涨回成本线；反过来成本低于价值，开发会一直增加直到成本追上价值。
+<strong>极北苔原上盖一座五星级酒店</strong>这种情形——成本花出去了，但市场根本不认这个地段——
+就是成本≠价值的极端例子。</p>
+<p>成本法有两大基本要素：</p>
+<pre><code>土地价值（Site Value）
+＋ 建筑物重置成本（Cost of Improvements）
+－ 折旧（Depreciation）
+＝ 市场价值（Market Value）
+</code></pre>
+<p><strong>土地价值本身通常还是靠直接比较法估出来的</strong>——土地没有"生产成本"这种东西，
+只能拿同类空地的成交价来比较。</p>
+<h3 id="vs-vs">重置成本 vs 重建成本，历史成本 vs 现行成本</h3>
+<p>两组容易混淆的概念，各自只有一个正确答案：</p>
+<ul>
+<li><strong>重建成本（reproduction cost）</strong>：造一个待估建筑物<strong>一模一样的复制品</strong>要花多少钱；
+  <strong>重置成本（replacement cost）</strong>：造一个<strong>功能等价的现代版本</strong>要花多少钱。
+  <strong>成本法一律用重置成本</strong>——旧建筑用的工艺、材料现在未必还找得到，
+  就算找得到，一比一复刻出来的成本往往比现代等效版本更贵，建成后市场却未必更认可
+  （现代人未必想要一栋"每个房间都有独立房门"的老式布局）。</li>
+<li><strong>历史成本（historic cost）</strong>：建造当年实际花的钱；
+  <strong>现行成本（current cost）</strong>：<strong>在评估日</strong>建造同一栋房子要花多少钱。
+  <strong>成本法一律用现行成本</strong>——货币购买力与建材、人工价格都随时间变化，
+  25 年前的实际造价对今天的估值毫无意义。</li>
+</ul>
+<div class="vv-callout vv-callout--danger">
+<p><span class="vv-callout__icon">✕</span></p>
+<div>
+<p><strong>别把"当年花了多少钱"当成算价值的起点</strong></p>
+<p>客户说"我这栋房子当年装修花了 $80,000，成本法应该把这 $80,000 算进去"——
+这是把<strong>历史成本</strong>误当成<strong>现行成本</strong>，也是把<strong>成本</strong>误当成<strong>市场愿意付的钱</strong>
+（回到第四节的那条陷阱）。成本法要的是"今天重新造一个功能等价物要花多少"，
+不是"当年真实花了多少"。</p>
+</div>
+</div>
+<h3 id="_10">成本数据从哪儿来：单位成本法</h3>
+<p>最常用的估算办法是<strong>单位成本法（unit cost method）</strong>：把建造总成本换算成
+每平方英尺（住宅通行做法）或每立方英尺（工业厂房通行做法）的单价，
+再乘以待估建筑的面积或体积。这个单价来自专业成本手册对同类"样板房"的造价拆解，
+估价师找一栋跟待估建筑最接近的样板房类型，套用它的单价，再对细微差异做小幅调整。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">ℹ️</span></p>
+<div>
+<p><strong>教材举的成本手册工具名，2026 年公司名字变了，工具还在</strong></p>
+<p>教材附录举的例子是「CoreLogic – SwiftEstimator」，用的是 <strong>Marshall &amp; Swift</strong>
+成本估价体系。<strong>2025-03-24 起 CoreLogic 已全球更名为 Cotality</strong>（品牌与业务延续，
+公司未消失、未退出市场），Marshall &amp; Swift 这个成本估价品牌仍在运营，
+现属 Cotality 旗下产品（UWS-0188、UWS-0189）。加拿大地产开发与估价行业
+另有一套年度基准——<strong>Altus Group《Canadian Cost Guide》</strong>，每年发布一版
+（2026 版已于 2026-04-23 发布），是 Marshall &amp; Swift／Cotality 之外
+估价师常用的加拿大本地成本数据源（UWS-0190）。<strong>卷面</strong>上如果考"成本数据来源"，
+答的是"专业成本手册"这个方法论本身；<strong>实务</strong>里工具的公司名、版本号年年可能变，
+且<strong>具体每平方英尺单价本身就是每年更新的数字，本篇不给任何快照数</strong>——
+用的时候一律查当年最新版本，不要抄旧资料上的单价。</p>
+</div>
+</div>
+<h2 id="_11">八、折旧：四个格子，两条判断轴</h2>
+<p>现行成本减去的折旧，教材分成两条判断轴，交叉出四个格子：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>物理（Physical）</strong></th>
+<th><strong>功能（Functional）</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>可治愈（Curable）</strong></td>
+<td>修复的成本，低于/等于因此增加的价值——比如外墙需要重新油漆、地毯有破损</td>
+<td>更新的成本，低于/等于因此增加的价值——比如卫浴龙头款式过时、需要加装一个卫生间</td>
+</tr>
+<tr>
+<td><strong>不可治愈（Incurable）</strong></td>
+<td>修复成本过高、经济上不划算——比如地基结构性沉降、承重构件老化</td>
+<td>无法用合理成本修正——比如户型设计先天不合理（卧室必须穿过另一间卧室才能到达）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>判断"可治愈"还是"不可治愈"的唯一标准是经济性</strong>：修复成本是不是低于
+修复后带来的价值增量。低于就是可治愈，扣的是<strong>修复成本</strong>；
+高于就是不可治愈，扣的是<strong>估价师的专业判断</strong>（往往用"有效年龄 ÷ 经济寿命"
+这类比例法估算，因为不可治愈的折旧没有一个明确的"修多少钱"可以直接查）。</p>
+<p>物理不可治愈折旧最常见的估算法是<strong>直线法（straight-line）</strong>：
+假设一栋建筑的经济寿命是 N 年、到期残值为零，那么每年折旧额 ＝ 重置成本 ÷ N，
+乘以建筑的<strong>有效年龄</strong>（不一定等于实际建成年数——保养特别好的老房子，
+有效年龄可以小于实际年龄；反之亦然）。</p>
+<h2 id="15">九、案例二：一栋 15 年独立屋的成本法全流程</h2>
+<p><strong>同样是自设的教学整数示例，不对应任何真实地址、任何成本手册的现行单价。</strong></p>
+<p>待估物业：2,000 平方英尺独立式住宅，<strong>实际建成 15 年，评估师判断有效年龄与
+实际年龄一致（保养正常）</strong>。土地价值已用直接比较法单独估出为 <strong>$650,000</strong>。
+估价师查阅当期成本手册，本例假设该类型住宅当年现行重置成本单价为
+<strong>每平方英尺 $220</strong>（自设整数，实务中一律用当年成本手册的现行单价，不得沿用旧值）。</p>
+<p><strong>A. 重置成本（新建，Replacement Cost New）</strong></p>
+<pre><code>2,000 平方英尺 × $220/平方英尺 = $440,000
+</code></pre>
+<p><strong>B. 减：折旧</strong></p>
+<p>估价师现场检查后，逐格给出估计：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+<th>金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>物理·可治愈</td>
+<td>外墙需要重新油漆、后院木平台局部维修，修复成本</td>
+<td>$7,000</td>
+</tr>
+<tr>
+<td>物理·不可治愈</td>
+<td>假设经济寿命 55 年、有效年龄 15 年，直线法：$440,000 ÷ 55 × 15</td>
+<td>$120,000</td>
+</tr>
+<tr>
+<td>功能·可治愈</td>
+<td>主卫浴龙头与灯具款式过时，更新成本</td>
+<td>$5,000</td>
+</tr>
+<tr>
+<td>功能·不可治愈</td>
+<td>原始户型有一间卧室必须穿过另一间卧室才能到达，无法用合理成本改正，估价师专业判断</td>
+<td>$8,000</td>
+</tr>
+<tr>
+<td><strong>折旧合计</strong></td>
+<td></td>
+<td><strong>$140,000</strong></td>
+</tr>
+</tbody>
+</table>
+<pre><code>折旧后重置成本 = $440,000 － $140,000 = $300,000
+</code></pre>
+<p><strong>C. 加：土地价值</strong></p>
+<pre><code>$300,000 ＋ $650,000（土地价值，直接比较法估出）＝ $950,000
+</code></pre>
+<p><strong>D. 市场价值（成本法指示）＝ $950,000</strong></p>
+<div class="vv-callout vv-callout--danger">
+<p><span class="vv-callout__icon">✕</span></p>
+<div>
+<p><strong>折旧的四格不能互相顶替</strong></p>
+<p>物理不可治愈的 $120,000 不能因为"反正都是折旧"就和功能不可治愈的 $8,000 合并成
+一个模糊的"综合折旧率"——四格分别对应不同的成因（结构老化 vs 户型设计），
+拆开写才能让报告的读者（客户、贷款机构、法院）看懂折旧到底来自哪里，
+也才能在物业翻新后正确地把"可治愈"那两格重新计算（一旦维修完成，
+可治愈折旧应当归零，不可治愈折旧才需要重新评估有效年龄）。</p>
+</div>
+</div>
+<h2 id="18000">十、案例三：配对销售法——车库那 $18,000 是怎么算出来的</h2>
+<p>上面案例一里，可比案例 B 因为没有车库被加了 $18,000，这个数字不是拍脑袋定的，
+而是<strong>配对销售法（paired sales analysis）</strong>推导出来的——找两笔<strong>几乎完全相同、
+只有一项特征不同</strong>的近期交易，用成交价之差反推那一项特征的市场贡献。</p>
+<p>同一街区两栋几乎一模一样的联排别墅：</p>
+<ul>
+<li><strong>物业 P1</strong>（只有露天车位，没有车库）：2026-03-10 成交，$700,000；</li>
+<li><strong>物业 P2</strong>（其余条件完全相同，但带一个附建双车位车库）：2026-03-25 成交，$718,000。</li>
+</ul>
+<p>两笔交易相隔仅 15 天，同一区域、同一市场条件下，<strong>视为不需要时间调整</strong>：</p>
+<pre><code>配对差额 = $718,000 － $700,000 = $18,000
+</code></pre>
+<p>在其余条件都相同的前提下，这 $18,000 的差额只能归因于那一个双车位车库——
+这就是它被用在案例一里作为车库调整额的市场依据。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">🔧</span></p>
+<div>
+<p><strong>配对销售法的适用条件比它看起来更苛刻</strong></p>
+<p>这个方法只在<strong>真的能找到"只差一项"的两笔交易</strong>时才可靠——现实中很难找到
+两处物业除了一项特征外<strong>处处</strong>相同。找不到严格意义上的配对时，
+估价师退而求其次，用统计方法（多笔交易做回归）或经验判断估算特征贡献，
+但这时候的可信度就要打折扣，报告里应当说明依据的性质。<strong>卷面</strong>上考的是
+"为什么这个方法能孤立出单一特征的价值"（控制变量的逻辑）；<strong>实务</strong>里给客户解释
+一个装修/设施到底值多少钱时，能拿出配对销售证据远比"我觉得值这个数"有说服力。</p>
+</div>
+</div>
+<h2 id="_12">十一、成本法的适用范围与局限</h2>
+<p>成本法<strong>最适合</strong>两类场景：</p>
+<ol>
+<li><strong>市场上找不到足够可比交易的特殊用途建筑</strong>——教堂、政府建筑、其他专用物业；</li>
+<li><strong>需要把土地和建筑物价值分开列示的场合</strong>——保险理赔（只赔建筑物重置，不赔土地）、
+   物业税评估。</li>
+</ol>
+<p>成本法<strong>在住宅市场价值评估里通常只作为最后手段或交叉验证</strong>，原因有二：</p>
+<ul>
+<li><strong>折旧估计的主观性</strong>——尤其是"不可治愈"那两格，没有一个可以直接核对的公式；</li>
+<li><strong>成本≈价值这个前提本身要成立才行</strong>——物业越老，成本与市场价值脱钩的可能性越大，
+  所以成本法对<strong>新建物业</strong>最可靠，对<strong>老旧物业</strong>参考价值递减。</li>
+</ul>
+<p><strong>共管公寓单位几乎从不用成本法估值</strong>：要单独估出一个单元的价值，
+理论上得把整栋楼的地价、全部建筑成本、软成本、开发利润都算清楚再按比例分摊，
+这份工作量远超一个单元估价愿意支付的费用；而且单元估价师通常看不到
+屋顶、机房、地下车库这些公共部分的实际状况，用通用表格勾选"状况良好"
+这类笼统结论反而可能误导。</p>
+<h2 id="_13">十二、柜台上怎么做</h2>
+<ol>
+<li><strong>CMA 不是正式估价，别把两者混为一谈</strong>——CMA 给客户一个市场参考区间与建议定价，
+   遇到贷款、诉讼、遗产分割这类需要专业估价意见的场合，转介给 AIC 持牌估价师。</li>
+<li><strong>调整永远按顺序走</strong>：先融资与交易条件，再市场条件（时间），最后才是物理特征——
+   哪怕某一步的答案是 $0，也要走完这四步，不要跳步。</li>
+<li><strong>调整金额要有市场依据，不能用装修成本、客户报价直接替代</strong>——能找到配对销售证据
+   最好，找不到就说明这是基于经验的估计，别把估计包装成精确值。</li>
+<li><strong>总调整占比是可比案例质量的信号</strong>：单个总调整明显超过 20%（VTB 融资调整除外），
+   要重新考虑这个案例是不是真的可比，而不是硬调下去。</li>
+<li><strong>共管公寓做 CMA，先核对共同区域权益与共同费用分摊方式</strong>，
+   户型面积楼龄再像，这两条对不上照样不算真正可比。</li>
+</ol>
+<h2 id="_14">十三、两个容易踩空的场景</h2>
+<p><strong>场景一：客户坚持装修花了多少钱就该多卖多少钱。</strong> 屋主 Wendy 三年前花 $45,000
+装修了一间专业级家庭影音室，坚持挂牌价要比周边可比案例高出这整整 $45,000。
+持牌代表的正确做法<strong>不是</strong>照单全收，而是向 Wendy 解释：市场愿意为这间影音室
+多付的钱，取决于有多少潜在买家真的需要这个功能，很可能远低于装修的实际花费——
+可以参考类似装修的可比案例成交价差（配对销售法的思路）给出一个更贴近市场的区间，
+而不是简单地把成本加到成交价上。</p>
+<p><strong>场景二：两个共管公寓单元，户型、楼层、朝向都接近，却不能直接互相当可比案例。</strong>
+持牌代表 Raj 在给一套公寓单位做 CMA 时，找到楼下同户型单元最近的成交案例，
+但发现两栋楼虽然户型相似，其中一栋的共同费用<strong>包含供暖</strong>、另一栋供暖单独计费，
+且一栋大楼名下持有一块尚未开发、有潜在价值的公共土地，另一栋没有。
+Raj 没有直接套用这个"看起来一样"的可比案例，而是先核对共同区域权益与
+共同费用分摊方式，确认差异后再决定要不要纳入、要不要额外调整——
+这正是第六节强调的、共管公寓比较必须额外核对的那两组因素。</p>
+<hr />
+<h2 id="_15">术语双语对照</h2>
+<table>
+<thead>
+<tr>
+<th>中文</th>
+<th>英文</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>直接比较法 / 市场法</td>
+<td>direct comparison approach / market approach</td>
+<td>建立在替代原则上</td>
+</tr>
+<tr>
+<td>成本法</td>
+<td>cost approach</td>
+<td>土地价值 + 重置成本 － 折旧</td>
+</tr>
+<tr>
+<td>可比案例</td>
+<td>comparable(s)</td>
+<td>近期、相似、交易条件相似</td>
+</tr>
+<tr>
+<td>待估物业</td>
+<td>subject property</td>
+<td>比较的基准，只有可比案例向它调整</td>
+</tr>
+<tr>
+<td>评级表</td>
+<td>rating grid</td>
+<td>把每项调整逐条列出，算出调整后价格</td>
+</tr>
+<tr>
+<td>现金等价化</td>
+<td>cash equivalency</td>
+<td>消除非市场化融资对成交价的扭曲</td>
+</tr>
+<tr>
+<td>卖方融资 / 卖方回按</td>
+<td>vendor take-back mortgage (VTB)</td>
+<td>常见的非市场化融资来源</td>
+</tr>
+<tr>
+<td>关联交易 / 非公平交易</td>
+<td>non-arm's-length transaction</td>
+<td>不能直接作可比案例证据</td>
+</tr>
+<tr>
+<td>净调整 / 总（绝对值）调整</td>
+<td>net adjustment / gross (absolute) adjustment</td>
+<td>净调整小不代表可比性好</td>
+</tr>
+<tr>
+<td>比较市场分析</td>
+<td>Comparative Market Analysis (CMA)</td>
+<td>持牌代表做的，非正式估价</td>
+</tr>
+<tr>
+<td>持牌估价师</td>
+<td>Appraiser (AIC, P.App)</td>
+<td>受 CUSPAP 约束，出具正式估价报告</td>
+</tr>
+<tr>
+<td>加拿大统一专业估价执业准则</td>
+<td>Canadian Uniform Standards of Professional Appraisal Practice (CUSPAP)</td>
+<td>现行版本 CUSPAP 2026</td>
+</tr>
+<tr>
+<td>重置成本</td>
+<td>replacement cost</td>
+<td>功能等价现代版本的造价，成本法用这个</td>
+</tr>
+<tr>
+<td>重建成本</td>
+<td>reproduction cost</td>
+<td>一模一样复制品的造价，成本法不用</td>
+</tr>
+<tr>
+<td>现行成本</td>
+<td>current cost</td>
+<td>评估日当天的造价，成本法用这个</td>
+</tr>
+<tr>
+<td>历史成本</td>
+<td>historic cost</td>
+<td>建造当年的实际花费，成本法不用</td>
+</tr>
+<tr>
+<td>单位成本法</td>
+<td>unit cost method</td>
+<td>每平方英尺/立方英尺单价 × 面积/体积</td>
+</tr>
+<tr>
+<td>有效年龄 / 经济寿命</td>
+<td>effective age / economic life</td>
+<td>直线法折旧的两个输入</td>
+</tr>
+<tr>
+<td>物理折旧 / 功能折旧</td>
+<td>physical depreciation / functional depreciation</td>
+<td>折旧的两条判断轴之一</td>
+</tr>
+<tr>
+<td>可治愈 / 不可治愈</td>
+<td>curable / incurable</td>
+<td>另一条判断轴，看修复经济性</td>
+</tr>
+<tr>
+<td>配对销售法</td>
+<td>paired sales analysis</td>
+<td>用两笔"只差一项"的交易反推特征贡献</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vs">教材 vs 现行对照表</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>教材©2020 怎么说</th>
+<th>2026 现行是什么</th>
+<th>出处 UWS</th>
+<th>生效/核实日</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>附录 22.2 成本估价工具举例「CoreLogic – SwiftEstimator」，母公司 CoreLogic</td>
+<td>CoreLogic 已于 <strong>2025-03-24</strong> 全球更名为 <strong>Cotality</strong>（品牌与业务延续，未消失）；Marshall &amp; Swift® 品牌仍在运营，现属 Cotality 旗下产品</td>
+<td>UWS-0188、UWS-0189</td>
+<td>2026-09-05</td>
+</tr>
+<tr>
+<td>2</td>
+<td>未提及估价专业执业准则的具体版本号</td>
+<td>现行强制版本为 <strong>CUSPAP 2026</strong>，2026-04-01 起对当日及以后完成的全部专业服务约定（含追溯性评估）强制适用</td>
+<td>UWS-0187</td>
+<td>2026-09-05</td>
+</tr>
+<tr>
+<td>3</td>
+<td>成本数据引用样板成本手册的单价（未标注更新周期）</td>
+<td>成本数据按<strong>年度</strong>更新是行业现行机制——Altus Group《Canadian Cost Guide》2026 版已于 2026-04-23 发布；具体单价逐年变化，本篇不给快照数</td>
+<td>UWS-0190</td>
+<td>2026-09-05</td>
+</tr>
+</tbody>
+</table>
+<p><strong>这一章的对照表和其他章不太一样</strong>：没有一条是"法律规定变了"，
+三条都是"举例用的具体公司/版本号该更新了"或"确认这套按年更新的机制现行依然成立"——
+和 ch13 一样，这是本课<strong>长青原理章</strong>的典型形态：调整逻辑、折旧分类这些方法论
+不会因为哪部法律修订而改变，会过期的只是教材举的具体名字与年份。</p>
+<h2 id="_16">源表（本篇判据）</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>事实</th>
+<th>一手源</th>
+<th>核实日</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>CUSPAP 现行版本为 CUSPAP 2026，2026-04-01 起对全部专业服务约定（含追溯性）强制适用</td>
+<td>aicanada.ca/about-aic/cuspap/（UWS-0187）</td>
+<td>2026-09-05</td>
+</tr>
+<tr>
+<td>2</td>
+<td>CoreLogic 于 2025-03-24 宣布全球更名为 Cotality</td>
+<td>cotality.com/press-releases/meet-cotality（UWS-0188）</td>
+<td>2026-09-05</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Marshall &amp; Swift® 品牌仍在运营，现为 Cotality（原 CoreLogic）旗下产品</td>
+<td>corelogic.com/mortgage/appraiser-solutions/marshall-swift/（UWS-0189）</td>
+<td>2026-09-05</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Altus Group《2026 Canadian Cost Guide》已于 2026-04-23 发布，是加拿大建筑成本的年度基准</td>
+<td>altusgroup.com 新闻稿（UWS-0190）</td>
+<td>2026-09-05</td>
+</tr>
+</tbody>
+</table>
+<p><strong>待核清单（禁在对外产物中出现的数字）</strong>：任何"当年现行"每平方英尺重置成本单价
+（本篇案例二的 $220/平方英尺是自设教学整数，不是任何成本手册的现行值）；
+Altus《Canadian Cost Guide》与 Marshall &amp; Swift 数据库里的具体分区域单价；
+案例一假设的月度市场增值率 0.5%（自设教学假设，非任何官方或行业指数）。</p>
+    <div class="doc-nav"><a href="ch21-appraisal-intro.html">← 地产估价导论：估价是什么、谁能做、柜台上怎么用（In</a><a href="ch23-income-approach.html" class="r">收益法估价：把一栋出租物业的现金流换算成一个价格（T →</a></div>
+    <div class="doc-src">来源：<code>self</code></div>
+  </article>
+  <aside class="doc-aside">
+    <details class="doc-toc-details" open>
+      <summary class="doc-toc-summary"><span>本页目录</span><span class="doc-toc-icon">▾</span></summary>
+      <div class="toc"><div class="toc">
+<ul>
+<li><a href="#_1">一、这一章要回答的问题：谁在替谁定价，凭什么</a></li>
+<li><a href="#_2">二、直接比较法的核心原理：替代原则</a><ul>
+<li><a href="#recent">recent（近期）：没有一个固定的周数或月数</a></li>
+<li><a href="#similar">similar（相似）：只需要在影响买卖决策的因素上相似</a></li>
+<li><a href="#_3">三点检验</a></li>
+</ul>
+</li>
+<li><a href="#_4">三、调整的方向：谁比谁强，钱往哪边走</a></li>
+<li><a href="#_5">四、调整的顺序：为什么必须先处理交易条件，再处理物理特征</a><ul>
+<li><a href="#_6">净调整与总调整：一个看起来完美的可比案例，可能根本不是可比案例</a></li>
+</ul>
+</li>
+<li><a href="#_7">五、案例一：三个可比案例，从成交价算到指示价值</a></li>
+<li><a href="#_8">六、直接比较法的适用范围与局限</a></li>
+<li><a href="#_9">七、成本法：另起一条路径算价值</a><ul>
+<li><a href="#vs-vs">重置成本 vs 重建成本，历史成本 vs 现行成本</a></li>
+<li><a href="#_10">成本数据从哪儿来：单位成本法</a></li>
+</ul>
+</li>
+<li><a href="#_11">八、折旧：四个格子，两条判断轴</a></li>
+<li><a href="#15">九、案例二：一栋 15 年独立屋的成本法全流程</a></li>
+<li><a href="#18000">十、案例三：配对销售法——车库那 $18,000 是怎么算出来的</a></li>
+<li><a href="#_12">十一、成本法的适用范围与局限</a></li>
+<li><a href="#_13">十二、柜台上怎么做</a></li>
+<li><a href="#_14">十三、两个容易踩空的场景</a></li>
+<li><a href="#_15">术语双语对照</a></li>
+<li><a href="#vs">教材 vs 现行对照表</a></li>
+<li><a href="#_16">源表（本篇判据）</a></li>
+</ul>
+</div>
+</div>
+    </details>
+    
+    <h3>同板块</h3><ul class="rel"><li><a href="ch08-financial-statements.html">财务报表导论：看懂三张表，也看懂你自己经纪行的那三张表（Financial St</a></li><li><a href="ch21-appraisal-intro.html">地产估价导论：估价是什么、谁能做、柜台上怎么用（Introduction to </a></li><li><a href="ch23-income-approach.html">收益法估价：把一栋出租物业的现金流换算成一个价格（The Income or I</a></li></ul>
+    <a class="deck-cta" href="../slides.html?deck=ch22-direct-comparison-cost"><b>先过讲义 →</b><span>26 张 · 含 5 道自测 · 约 24 分钟<br>一屏一个意思，比直接啃全文省力</span></a>
+    <a class="vv-btn vv-btn--primary" style="width:100%;margin-top:16px"
+       href="../drill.html?bp=valuation">练这个板块的题 →</a>
+  </aside>
+</div></main>
+<footer class="foot">
+  <p><b>微出国 · 学</b> — BC 地产牌照（Real Estate Trading Services）备考。<br>
+  内容是学习者视角的整理，不是 UBC Sauder 官方教材；考试以 UBC 现行课程为准，
+  实务以金融服务管理局 (BC Financial Services Authority, BCFSA) 与《地产服务法》(Real Estate Services Act, RESA) 现行文件为准。</p>
+</footer>
+<script>var UP_PATH="../";var BUILD_TIME="1788891005";</script>
+<script>
+if((localStorage.getItem('vv-theme')||'')==='dark')
+  document.documentElement.setAttribute('data-theme','dark');
+
+// 自动版本更新检测：对比 DOM 的 BUILD_TIME 与服务器最新 manifest.json，出现新版本时带时间戳无缝重载绕过 HTTP 磁盘缓存
+(function(){
+  function checkVersion(){
+    var up = typeof UP_PATH !== 'undefined' ? UP_PATH : '';
+    fetch(up + 'assets/manifest.json?t=' + Date.now(), { cache: 'no-store' }).then(function(r){
+      return r.ok ? r.json() : null;
+    }).then(function(m){
+      if(!m || !m.build_time) return;
+      var serverBuild = String(m.build_time);
+      var clientBuild = typeof BUILD_TIME !== 'undefined' ? String(BUILD_TIME) : '';
+      if(clientBuild && serverBuild && clientBuild !== serverBuild){
+        var reloaded = sessionStorage.getItem('vv_reloaded_build');
+        if(reloaded !== serverBuild){
+          sessionStorage.setItem('vv_reloaded_build', serverBuild);
+          var u = new URL(location.href);
+          u.searchParams.set('_v', serverBuild);
+          location.replace(u.href);
+        } else if(!document.getElementById('vv-update-banner')) {
+          var bar = document.createElement('div');
+          bar.id = 'vv-update-banner';
+          bar.className = 'vv-update-banner';
+          bar.innerHTML = '🎉 网站已更新到最新版本，建议按 <b>Ctrl+F5</b> (或 <b>Cmd+Shift+R</b>) 强制刷新页面。<button onclick="location.reload(true)">立即刷新</button>';
+          document.body.prepend(bar);
+        }
+      }
+    }).catch(function(){});
+  }
+
+  checkVersion();
+  document.addEventListener('visibilitychange', function(){
+    if(document.visibilityState === 'visible') checkVersion();
+  });
+  window.addEventListener('focus', checkVersion);
+  setInterval(checkVersion, 5 * 60 * 1000);
+})();
+
+// 页眉登录态。身份服务不在（纯静态托管、或还没起 dev-server）时静默跳过——
+// 内容页是公开的，永远不该因为身份服务缺席而坏掉。
+fetch('/api/me').then(function(r){return r.ok?r.json():null;}).then(function(m){
+  if(!m||document.getElementById('vv-auth'))return;
+  var n=document.querySelector('.vv-header nav');if(!n)return;
+  var e=document.createElement('span');e.id='vv-auth';e.className='auth';
+  e.innerHTML=m.loggedIn
+    ?'<span title="学习记录已跨设备同步">'+m.username+'</span> <a href="/auth/logout">退出</a>'
+    :'<a href="/auth/login?next='+encodeURIComponent(location.pathname)+'">登录</a>';
+  n.after(e);
+}).catch(function(){});
+
+// ── 阅读器增强：专注/最大化模式 & 键盘/手势切页 ──
+(function(){
+  var prevUrl = typeof PREV_URL !== 'undefined' ? PREV_URL : '';
+  var nextUrl = typeof NEXT_URL !== 'undefined' ? NEXT_URL : '';
+
+  function updateMaxBtns(isMax) {
+    var btns = document.querySelectorAll('.vv-reader-btn-max');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isMax ? '✕ 退出专注' : '⛶ 专注阅读';
+    }
+  }
+
+  window.toggleDocMaximize = function() {
+    var root = document.documentElement;
+    var isMax = root.classList.toggle('is-doc-maximized');
+    try { localStorage.setItem('vv_doc_maximized', isMax ? 'true' : 'false'); } catch(e){}
+    updateMaxBtns(isMax);
+  };
+
+  function updateAsideBtns(isCol) {
+    var btns = document.querySelectorAll('.vv-aside-btn');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isCol ? '◨ 展开侧栏' : '◧ 折叠侧栏';
+    }
+  }
+
+  window.toggleSidebarCollapse = function() {
+    var root = document.documentElement;
+    var isCol = root.classList.toggle('is-aside-collapsed');
+    try { localStorage.setItem('vv_aside_collapsed', isCol ? 'true' : 'false'); } catch(e){}
+    updateAsideBtns(isCol);
+  };
+
+  try {
+    if(localStorage.getItem('vv_aside_collapsed') === 'true') {
+      document.documentElement.classList.add('is-aside-collapsed');
+      setTimeout(function(){ updateAsideBtns(true); }, 0);
+    }
+  } catch(e){}
+
+  // 本页目录 <details> 状态记忆
+  var tocDet = document.querySelector('.doc-toc-details');
+  if(tocDet) {
+    try {
+      if(localStorage.getItem('vv_toc_open') === 'false') {
+        tocDet.removeAttribute('open');
+      }
+    } catch(e){}
+    tocDet.addEventListener('toggle', function() {
+      try { localStorage.setItem('vv_toc_open', tocDet.open ? 'true' : 'false'); } catch(e){}
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    var tag = (e.target && e.target.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prevUrl) {
+      location.href = prevUrl;
+    } else if (e.key === 'ArrowRight' && nextUrl) {
+      location.href = nextUrl;
+    } else if (e.key === 'f' || e.key === 'F' || e.key === 'm' || e.key === 'M') {
+      toggleDocMaximize();
+    } else if (e.key === 'Escape' && document.documentElement.classList.contains('is-doc-maximized')) {
+      toggleDocMaximize();
+    }
+  });
+
+  var touchStartX = 0, touchStartY = 0;
+  document.addEventListener('touchstart', function(e) {
+    if (e.touches && e.touches.length === 1) {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  document.addEventListener('touchend', function(e) {
+    if (!e.changedTouches || e.changedTouches.length !== 1) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    var dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > 90 && Math.abs(dy) < 60) {
+      if (dx > 0 && prevUrl) {
+        location.href = prevUrl;
+      } else if (dx < 0 && nextUrl) {
+        location.href = nextUrl;
+      }
+    }
+  }, { passive: true });
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body></html>

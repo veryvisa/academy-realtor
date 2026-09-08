@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>收益法估价：把一栋出租物业的现金流换算成一个价格（The Income or Investment Approach of Appraisal） · 微出国 · 学</title>
+<link rel="stylesheet" href="../assets/style.css?v=1788891005">
+<script>var PREV_URL="ch22-direct-comparison-cost.html";var NEXT_URL="ch24-contract-to-completion.html";</script>
+<link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body class="vv">
+<header class="vv-header">
+  <a class="vv-brand" href="../index.html"><svg viewBox="102.305 90.391 73.617 59.957" width="28" aria-hidden="true" class="mark">
+<path fill="#30D9C4" d="M 107.894531 95.808594 L 127.277344 95.808594 C 127.277344 95.808594 129.507812 95.628906 130.835938 97.679688 C 131.585938 98.910156 131.65625 100.316406 131.082031 101.546875 L 121.609375 117.953125 C 121.609375 117.953125 120.335938 120.65625 117.011719 120.824219 C 113.714844 120.910156 112.242188 118.40625 112.242188 118.40625 L 103.722656 103.652344 C 103.722656 103.652344 102.304688 101.792969 103.09375 99.332031 C 103.878906 96.878906 106.148438 95.773438 107.894531 95.808594 "/>
+<path fill="#0082CA" d="M 115.964844 124.792969 C 115.847656 124.59375 116.09375 124.378906 116.277344 124.519531 C 117.195312 125.21875 118.664062 125.902344 120.683594 125.515625 C 122.164062 125.210938 123.550781 124.296875 124.402344 122.757812 C 125.242188 121.300781 138.8125 97.8125 138.8125 97.8125 C 138.8125 97.8125 141.9375 90.917969 150.207031 90.550781 L 169.96875 90.550781 C 169.96875 90.550781 173 90.390625 174.503906 93.40625 C 175.921875 96.433594 173.941406 98.695312 173.667969 99.109375 C 173.394531 99.523438 142.203125 146.726562 142.203125 146.726562 C 142.203125 146.726562 140.003906 150.347656 135.40625 150.347656 C 130.808594 150.347656 128.707031 146.878906 128.417969 146.398438 C 128.175781 145.992188 118.835938 129.78125 115.964844 124.792969 "/></svg>微出国 · 学</a>
+  <nav><a href="../index.html">路线</a><a href="../slides.html">讲义</a><a href="../docs/" aria-current="page">讲解</a><a href="../drill.html">练习</a><a href="../exam.html">模考</a><a href="../progress.html">进度</a></nav>
+  <button class="theme" onclick="var r=document.documentElement,d=r.getAttribute('data-theme')==='dark';r.setAttribute('data-theme',d?'light':'dark');localStorage.setItem('vv-theme',d?'light':'dark')">◐</button>
+</header>
+<main><a href="ch22-direct-comparison-cost.html" class="vv-float-nav vv-float-nav--prev" title="上一篇: 直接比较法与成本法：可比案例怎么选、怎么调、重置成本怎么算（Direct Comparison and Cost Approaches of Appraisal）"><span class="vv-float-nav__icon">‹</span><span class="vv-float-nav__card"><small>← 上一篇</small><strong>直接比较法与成本法：可比案例怎么选、怎么调、</strong></span></a><a href="ch24-contract-to-completion.html" class="vv-float-nav vv-float-nav--next" title="下一篇: 从签约到交割：过户流程、调整表与教材没写的三层义务（From Contract to Completion）"><span class="vv-float-nav__card"><small>下一篇 →</small><strong>从签约到交割：过户流程、调整表与教材没写的三</strong></span><span class="vv-float-nav__icon">›</span></a><div class="vv-max-dock"><span class="vv-max-dock__hint">键盘 ← → 切页 | Esc 退出</span><button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()">✕ 退出专注</button></div>
+<div class="doc-wrap">
+  <article class="doc">
+    <div class="doc-bar">
+      <p class="crumb"><a href="../index.html">路线</a> › 估价与财务报表</p>
+      <div class="doc-bar-actions">
+        <span class="vv-reader-hint">键盘 ← → 翻页</span>
+        <button class="vv-reader-btn vv-aside-btn" onclick="toggleSidebarCollapse()" title="折叠/展开右侧栏">◧ 折叠侧栏</button>
+        <button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()" title="最大化专注阅读 (快捷键 F)">⛶ 专注阅读</button>
+      </div>
+    </div>
+    <h1>收益法估价：把一栋出租物业的现金流换算成一个价格（The Income or Investment Approach of Appraisal）</h1>
+    <div class="doc-meta"><span class="vv-badge vv-badge--accent">估价与财务报表 · 练习配比 12%</span><span class="vv-badge">11,173 字</span><span class="vv-badge">约 22 分钟</span></div>
+    <blockquote>
+<p><strong>本章地位</strong>：估价三法之一（另两法是市场比较法与成本法，见本板块其他篇）。<strong>收益法只用在能产生租金收入的物业上</strong>——公寓楼、写字楼、工业厂房、商铺，本篇沿用教材的多单元公寓例子讲原理，末段带一个工业厂房的变体。
+这一章几乎全是<strong>数学关系与市场机制</strong>：怎么从潜在毛收入算到净营业收入、怎么从可比销售倒推资本化率、资本化率与市场价值互为倒数关系——<strong>这些关系不会因为哪部法律修订而改变</strong>，所以本篇的护城河不在「教材哪句话过时了」，而在<strong>教材自己承认没教的那块</strong>（现金流折现与财务杠杆），以及<strong>净营业收入的输入项会被哪些现行法规钉死</strong>（涨租上限、短租登记）。
+核实日期：<strong>2026-09-05</strong>，出处见文末源表。</p>
+</blockquote>
+<h2 id="_1">一、这一章要回答的问题：一栋楼的价格，到底是怎么算出来的</h2>
+<p>一栋收租的公寓楼要卖，价格从哪儿来？不是"业主觉得值多少"，也不是"隔壁小区上次卖了多少"，
+而是<strong>买家愿意为这份未来现金流付多少钱</strong>。收益法估价的逻辑分三步：</p>
+<ol>
+<li>算清楚这栋楼<strong>一年能稳定产生多少净营业收入（Net Operating Income, NOI）</strong>；</li>
+<li>找到市场上<strong>类似风险的投资，买家现在要求多高的回报率（yield / capitalization rate）</strong>；</li>
+<li>用这两个数字<strong>反推出价格</strong>——价格是那个"用 NOI 除以要求回报率"算出来的资本额。</li>
+</ol>
+<p>这套逻辑背后是一句制度性的话：<strong>估价估的是市场价值，不是对某一个具体业主的价值。</strong> 折旧、
+所得税、资本成本抵扣、按揭还款，这几样东西<strong>因人而异</strong>——两个人买同一栋楼，折旧politique
+不同、税率不同、贷款条件不同，但市场愿意为这栋楼的净营业收入付的价格应该是同一个数。
+这正是为什么估价师在计算 NOI 时，要把这四样"因业主而异"的东西统统排除在外
+（见第三节）。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">ℹ️</span></p>
+<div>
+<p><strong>这一章长青，护城河在别处</strong></p>
+<p>「教材是结构，不是真相」在这一章的体现方式和前面几章不一样：不是教材某句话被后来的法律
+推翻了，而是<strong>教材主动声明有一块内容不教</strong>（现金流折现与财务杠杆分析，见第七节），
+而现行执业里这块内容对持牌人理解客户决策仍然有用；另外，<strong>净营业收入里的几个输入项</strong>
+——住宅出租的潜在毛收入增长速度、短租物业能出租多少天、物业税的具体算法——
+分别被 2020 年之后的几部法律钉死了上限或算法，教材成书时这些法律要么还没有，
+要么上限还是另一个数字。</p>
+</div>
+</div>
+<h2 id="_2">二、从潜在毛收入到净营业收入：四行算式，每一行都是判断题</h2>
+<p>教材给出的框架是一条四行算式：</p>
+<pre><code>潜在毛收入（Gross Potential Revenue）+ 其他收入
+− 空置与坏账准备（Vacancy and Bad Debt Allowance）
+= 有效毛收入（Gross Realized Revenue / Effective Gross Income, EGI）
+− 运营费用（业主承担的部分）
+= 净营业收入（Net Operating Income, NOI）
+</code></pre>
+<p><strong>潜在毛收入</strong>是假设 100% 出租、按<strong>当前市场租金</strong>（不是账面上写的旧租金）算出来的年租金总额。
+估价师必须去看市场上可比物业的现行租金，哪怕标的物业已经满租——因为满租不代表租金没有低于市场行情。
+<strong>其他收入</strong>是车位、储物间、洗衣房这类附属收入，通常单独列出以便更精确地比较各栋楼的纯居住租金。</p>
+<p><strong>空置与坏账准备</strong>不是一项运营费用，而是对潜在毛收入的一个折减——反映的是长期空置率、
+租客流转与欠租损失，依据的是<strong>同类可比物业的长期空置经验</strong>，而不是标的物业过去一年的实际数字
+（标的物业可能刚好运气好或运气差）。</p>
+<p><strong>运营费用</strong>只算<strong>业主承担的那一部分</strong>，且分成两类：<strong>固定费用</strong>（不管出不出租都要付——物业税、保险）
+与<strong>可变费用</strong>（随出租情况波动——管理费、水电、维修、清洁、工资、垃圾清运、装修、杂项）。
+教材特别提醒：<strong>物业税通常是最大的单项运营费用</strong>。</p>
+<div class="vv-callout vv-callout--warn">
+<p><span class="vv-callout__icon">⚠️</span></p>
+<div>
+<p><strong>满租不等于租金没有低估</strong></p>
+<p>一栋楼 100% 出租，很多人会以为"这就是这栋楼能收到的最高租金了"。教材明确提醒：
+即使标的或可比物业满租，估价师仍要拿这些租金和<strong>当期市场行情</strong>比较——
+老租客常年不涨租，导致账面满租但实际低于市场水平，这在 IC&amp;I（工业/商业/投资）物业里
+恰恰是机会所在：<strong>能识别出"账面租金低于市场"的物业，本身就是一项专业能力</strong>。</p>
+</div>
+</div>
+<h3 id="1">情景算例①：从潜在毛收入算到净营业收入</h3>
+<p><strong>标的物业</strong>：枫叶苑（Maple Court），一栋位于本拿比的 6 单元公寓楼，2026 年估价。</p>
+<table>
+<thead>
+<tr>
+<th>单元类型</th>
+<th>数量</th>
+<th>月租（每套）</th>
+<th>月租合计</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一室</td>
+<td>2</td>
+<td>$1,700</td>
+<td>$3,400</td>
+</tr>
+<tr>
+<td>两室</td>
+<td>2</td>
+<td>$2,100</td>
+<td>$4,200</td>
+</tr>
+<tr>
+<td>三室</td>
+<td>2</td>
+<td>$2,400</td>
+<td>$4,800</td>
+</tr>
+<tr>
+<td><strong>月租总计</strong></td>
+<td></td>
+<td></td>
+<td><strong>$12,400</strong></td>
+</tr>
+</tbody>
+</table>
+<p>年租金（潜在毛收入）＝ $12,400 × 12 ＝ <strong>$148,800</strong>。另有洗衣房其他收入 $100/月 × 12 ＝ <strong>$1,200</strong>。</p>
+<p><strong>潜在毛收入总计 ＝ $148,800 + $1,200 ＝ $150,000</strong></p>
+<p>按本地同类楼盘长期空置与坏账经验，估价师采用 <strong>3%</strong> 的空置与坏账准备：
+$150,000 × 3% ＝ <strong>$4,500</strong></p>
+<p><strong>有效毛收入（EGI）＝ $150,000 − $4,500 ＝ $145,500</strong></p>
+<p>运营费用（业主承担）：</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>分类</th>
+<th>金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>物业税</td>
+<td>固定</td>
+<td>$14,500</td>
+</tr>
+<tr>
+<td>保险</td>
+<td>固定</td>
+<td>$3,000</td>
+</tr>
+<tr>
+<td>管理费（4% of EGI）</td>
+<td>可变</td>
+<td>$5,820</td>
+</tr>
+<tr>
+<td>水电（公共区域）</td>
+<td>可变</td>
+<td>$6,000</td>
+</tr>
+<tr>
+<td>维修保养</td>
+<td>可变</td>
+<td>$8,000</td>
+</tr>
+<tr>
+<td>置换准备金（家电/地毯）</td>
+<td>可变</td>
+<td>$3,000</td>
+</tr>
+<tr>
+<td>工资（管理员）</td>
+<td>可变</td>
+<td>$6,000</td>
+</tr>
+<tr>
+<td>垃圾清运</td>
+<td>可变</td>
+<td>$1,200</td>
+</tr>
+<tr>
+<td>杂项</td>
+<td>可变</td>
+<td>$930</td>
+</tr>
+<tr>
+<td><strong>运营费用总计</strong></td>
+<td></td>
+<td><strong>$48,450</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>净营业收入（NOI）＝ $145,500 − $48,450 ＝ $97,050</strong></p>
+<p>费用率 ＝ $48,450 ÷ $145,500 ≈ <strong>33.3%</strong>——高于教材举例的 25–28% 区间，
+但这栋楼比较老、维修与置换准备金占比高，属于合理解释范围，不是算错了。
+<strong>估价师的下一步动作不是把费用率硬压回 28%，而是拿这栋楼的每一项费用去和可比楼盘逐项核对，
+判断哪些确实偏高、哪些是这栋楼真实的成本结构。</strong></p>
+<h2 id="_3">三、不算进净营业收入的四样东西，以及为什么</h2>
+<p>教材列出四项<strong>明确排除在净营业收入之外</strong>的支出，理由都指向同一句话：
+<strong>估价估的是市场价值，不是对某一个具体业主的价值</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>排除项</th>
+<th>为什么排除</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>折旧（Depreciation）</strong></td>
+<td>经济寿命是主观判断，且金额通常不足以左右估值结论；不同业主对同一栋楼的折旧假设会不一样</td>
+</tr>
+<tr>
+<td><strong>资本成本抵扣（Capital Cost Allowance）</strong></td>
+<td>依《所得税法》计算，只在报税时有意义，与市场价值无关</td>
+</tr>
+<tr>
+<td><strong>所得税</strong></td>
+<td>每个投资人的边际税率不同，同一栋楼对不同买家的税负天差地别</td>
+</tr>
+<tr>
+<td><strong>按揭还款（Debt Service）</strong></td>
+<td>每个买家的融资方案不同——现金买、8 成按揭、10 年期还是 25 年期，NOI 必须是"融资前"的数字才能在不同买家之间比较</td>
+</tr>
+</tbody>
+</table>
+<p><strong>净营业收入是对物业全部价值的回报，不是对业主自有资金（equity）部分的回报。</strong>
+这一句话在第七节讲财务杠杆时是整个推导的起点：一栋楼的资本化率永远是<strong>融资前</strong>算出来的，
+买家实际拿到手的权益回报率，要等确定了融资结构之后才能算。</p>
+<div class="vv-callout vv-callout--danger">
+<p><span class="vv-callout__icon">✕</span></p>
+<div>
+<p><strong>把按揭还款塞进运营费用，会算出一个谁都用不了的数字</strong></p>
+<p>如果把这一年的按揭本息也当"运营费用"扣掉，算出来的"净营业收入"只对<strong>这一个买家、
+这一笔具体贷款</strong>有意义——换一个全款买家、换一家银行给的利率，数字立刻不一样。
+这样算出来的资本化率没法在不同物业、不同买家之间比较，整个估价方法就失效了。</p>
+</div>
+</div>
+<h2 id="_4">四、必要回报率：风险、管理、流动性三把尺子</h2>
+<p>买家把钱投进一栋出租楼，本质上和买政府债券、买股票是同一类决策——<strong>在几个投资选项之间
+比较回报率</strong>。三个因素决定买家会要求多高的回报：</p>
+<ol>
+<li><strong>风险（Risk）</strong>：本金和收益能不能确定拿到、会不会波动；</li>
+<li><strong>管理要求（Management Requirements）</strong>：要花多少时间精力去维护这笔投资；</li>
+<li><strong>流动性（Liquidity）</strong>：想变现的时候，能多快、多容易换成现金。</li>
+</ol>
+<p>政府公债三项都低（风险几乎为零、不用管理、随时可套现），所以要求的回报率最低；
+一栋出租公寓楼三项都比公债差（租金和转售价都只能估算、需要持续管理、卖一栋楼远比卖债券麻烦），
+所以买家会要求更高的回报率；工业厂房通常比公寓风险更高（租户类型窄、空置后重新招租更难），
+要求的回报率往往还要再高一些。<strong>这三把尺子解释了为什么不同类型的物业，市场"公认"的
+资本化率会不一样</strong>——这不是拍脑袋定出来的数字，是市场里所有买家对风险、管理、流动性
+反应趋同之后收敛出来的结果。</p>
+<h2 id="_5">五、资本化过程：市场价值 = 净营业收入 ÷ 资本化率</h2>
+<p>净营业收入算出来之后，下一步是把它<strong>资本化</strong>成一个价格。基本关系式：</p>
+<pre><code>收益率（Yield） = 收入 ÷ 售价
+资本化率（Cap Rate） = 净营业收入 ÷ 市场价值
+                 或
+市场价值 = 净营业收入 ÷ 资本化率
+</code></pre>
+<p>资本化率不是凭空定的，而是从<strong>近期、类似风险的可比销售</strong>里反推出来的：拿可比物业的
+成交价和它当年的净营业收入相除，就得到那笔交易隐含的资本化率。<strong>这个反推方向和正向估价
+方向刚好相反</strong>——反推时资本化率是未知数，正向估价时市场价值才是未知数。</p>
+<div class="vv-callout vv-callout--warn">
+<p><span class="vv-callout__icon">⚠️</span></p>
+<div>
+<p><strong>资本化率不能用毛收入算</strong></p>
+<p>教材明确点名一个<strong>绝不能用的捷径</strong>：拿有效毛收入（而不是净营业收入）去除以成交价算资本化率。
+业主承担的运营费用必须被算进去，否则算出来的"资本化率"其实是两个不同费用结构的
+物业硬凑出来的数字，没有可比性。</p>
+</div>
+</div>
+<h3 id="2">情景算例②：用两笔可比交易推出资本化率，并算出标的物业的市场价值</h3>
+<p>估价师找到两笔近期成交的可比 6–8 单元公寓楼：</p>
+<table>
+<thead>
+<tr>
+<th>可比</th>
+<th>成交价</th>
+<th>有效毛收入(EGI)</th>
+<th>净营业收入(NOI)</th>
+<th>资本化率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>可比 A</td>
+<td>$1,350,000</td>
+<td>$135,000</td>
+<td>$101,250</td>
+<td>$101,250 ÷ $1,350,000 ＝ <strong>7.5%</strong></td>
+</tr>
+<tr>
+<td>可比 B</td>
+<td>$1,500,000</td>
+<td>$150,000</td>
+<td>$105,000</td>
+<td>$105,000 ÷ $1,500,000 ＝ <strong>7.0%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>可比 A 与枫叶苑楼龄、维护状况更接近，估价师判断枫叶苑应采用与可比 A 一致的
+<strong>资本化率 7.5%</strong>（可比 B 的 7.0% 作为"更新、条件更好的物业"的下限参照，
+支撑 7.5% 是这一档物业合理的市场预期）。</p>
+<p>代入第二节算出的 NOI：</p>
+<pre><code>市场价值 = 净营业收入 ÷ 资本化率
+        = $97,050 ÷ 7.5%
+        = $1,294,000
+</code></pre>
+<p><strong>枫叶苑的估计市场价值（直接资本化法）＝ $1,294,000。</strong></p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">🔧</span></p>
+<div>
+<p><strong>「小改一点资本化率，价格差很多」——这不是错觉</strong></p>
+<p>资本化率是分母，分母小幅变化会被放大成价格的大幅变化。同样 $97,050 的 NOI，
+资本化率从 7.5% 降到 7.0% 时，价值会从 $1,294,000 升到约 $1,386,000——
+相差近 <strong>$92,000</strong>，只因为资本化率变了 0.5 个百分点。**这正是教材反复提醒</p>
+</div>
+</div>
+<p>"必须把可比物业当作一个整体来判断，而不是拆开逐条比"的原因**：单挑一两个可比条件</p>
+<blockquote>
+<p>调整资本化率，很容易在无意中放大成一个离谱的价格。</p>
+</blockquote>
+<h2 id="gim">六、快算法：总收入乘数（GIM）为什么会和直接资本化法算出不同答案</h2>
+<p>除了直接资本化法，市场上还有一个更粗糙但更快的估算方式：<strong>总收入乘数（Gross Income Multiplier, GIM，
+住宅市场常称 Gross Rent Multiplier, GRM）</strong>——</p>
+<pre><code>总收入乘数 = 成交价 ÷ 有效毛收入
+市场价值（快算） = 标的有效毛收入 × 总收入乘数
+</code></pre>
+<p>GIM 的问题在于：它<strong>只看收入，完全不管运营费用</strong>。两栋楼有效毛收入一样，
+只要费用结构不同，真正的净营业收入就不同，但 GIM 快算会把它们估成同一个价格。</p>
+<h3 id="3gim-vs">情景算例③：GIM 快算 vs 直接资本化法，差在哪</h3>
+<p>用第五节的两笔可比交易反推 GIM：</p>
+<ul>
+<li>可比 A：$1,350,000 ÷ $135,000 ＝ <strong>10.0</strong></li>
+<li>可比 B：$1,500,000 ÷ $150,000 ＝ <strong>10.0</strong></li>
+</ul>
+<p>两笔可比的 GIM 一致，都是 10.0，看起来是个很稳的乘数。用它快算枫叶苑：</p>
+<pre><code>快算市场价值 = 枫叶苑 EGI × GIM
+           = $145,500 × 10.0
+           = $1,455,000
+</code></pre>
+<p>而第五节用直接资本化法算出的市场价值是 <strong>$1,294,000</strong>。两个方法差了
+<strong>$1,455,000 − $1,294,000 = $161,000</strong>（GIM 快算高估约 12.4%）。</p>
+<p><strong>差距从哪儿来</strong>：可比 A、B 的费用率分别是 25%（($135,000−$101,250)÷$135,000）
+和 30%（($150,000−$105,000)÷$150,000），而枫叶苑的费用率是 <strong>33.3%</strong>——
+枫叶苑运营成本占收入的比例明显高于两笔可比。GIM 只认收入，把枫叶苑的高费用结构完全忽略了，
+所以快算出来的价格系统性偏高。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">ℹ️</span></p>
+<div>
+<p><strong>GIM 的正确用法：交叉核对，不是替代</strong></p>
+<p>GIM 快算的价值不在于替代直接资本化法，而在于<strong>当两个方法算出的结果差很多时，
+提醒估价师回头检查假设</strong>——是费用估得不合理，还是可比选得不够接近。
+教材的做法（案例二）是把两种方法都算出来，再解释"为什么会接近"或"为什么会不同"，
+而不是挑一个自己喜欢的答案。</p>
+</div>
+</div>
+<h2 id="_6">七、投资者视角：财务杠杆如何撬动权益回报率（教材范围之外的补充）</h2>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">ℹ️</span></p>
+<div>
+<p><strong>教材自己说了这块不教</strong></p>
+<p>教材原文明确写道，现金流折现法（DCF）"超出本课程范围，留给更高阶的估价课程"；
+净营业收入是"融资前"的回报，财务杠杆对回报的影响教材也没有展开算例。
+<strong>本节是本篇在教材结构之外补的一块</strong>——不是教材某句话过时了，是教材主动划了边界，
+而柜台上客户几乎一定会问"我贷款买和全款买，回报差多少"，持牌人需要懂这个原理，
+即使不需要替客户算出精确数字。</p>
+</div>
+</div>
+<p>第三节已经点明：净营业收入是对<strong>全部物业价值</strong>的回报，不是对<strong>业主自有资金（equity）</strong>
+的回报。多数买家不会全款买楼，而是自己出一部分现金（equity）、剩下的用按揭（debt）——
+这时候，业主实际到手的回报率（权益回报率 / cash-on-cash return）会和资本化率不一样，
+差多少取决于<strong>借款成本相对资本化率是高还是低</strong>：</p>
+<ul>
+<li><strong>借款成本 &lt; 资本化率</strong> → <strong>正杠杆（positive leverage）</strong>：借来的钱赚的比它的利息成本多，
+  权益回报率会<strong>高于</strong>资本化率；</li>
+<li><strong>借款成本 &gt; 资本化率</strong> → <strong>负杠杆（negative leverage）</strong>：借来的钱成本比它能赚的还高，
+  权益回报率会<strong>低于</strong>资本化率，甚至可能低到让投资人倒贴。</li>
+</ul>
+<h3 id="4">情景算例④：同一栋楼，两种贷款利率，权益回报率天差地别</h3>
+<p>投资人以第五节算出的市场价值 <strong>$1,294,000</strong> 买下枫叶苑，自己出 25% 现金、
+贷款 75%：</p>
+<ul>
+<li>自有资金（equity）＝ $1,294,000 × 25% ＝ <strong>$323,500</strong></li>
+<li>贷款（loan）＝ $1,294,000 × 75% ＝ <strong>$970,500</strong></li>
+</ul>
+<p><strong>全款情形（不贷款）</strong>：回报率 ＝ NOI ÷ 总价 ＝ $97,050 ÷ $1,294,000 ＝ <strong>7.5%</strong>——
+正好等于第五节的资本化率，印证"净营业收入是融资前对全部价值的回报"这句话。</p>
+<p><strong>情形一：贷款利率 5.0%（纯利息）——正杠杆</strong></p>
+<pre><code>年利息 = $970,500 × 5.0% = $48,525
+税前现金流 = NOI − 年利息 = $97,050 − $48,525 = $48,525
+权益回报率 = 税前现金流 ÷ 自有资金 = $48,525 ÷ $323,500 = 15.0%
+</code></pre>
+<p>借款成本（5.0%）低于资本化率（7.5%），权益回报率被<strong>放大到 15.0%</strong>——正好是全款回报率的 2 倍。</p>
+<p><strong>情形二：贷款利率 9.0%（纯利息）——负杠杆</strong></p>
+<pre><code>年利息 = $970,500 × 9.0% = $87,345
+税前现金流 = NOI − 年利息 = $97,050 − $87,345 = $9,705
+权益回报率 = 税前现金流 ÷ 自有资金 = $9,705 ÷ $323,500 = 3.0%
+</code></pre>
+<p>同一栋楼、同样借 75%，只因为借款成本从 5.0% 变成 9.0%（高于 7.5% 的资本化率），
+权益回报率从 15.0% <strong>腰斩再腰斩</strong>到 3.0%。<strong>杠杆本身不创造回报，它只是放大或缩小
+物业本身的表现——用在借款成本低于资本化率时是加速器，用在借款成本高于资本化率时是减速器。</strong></p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">🔧</span></p>
+<div>
+<p><strong>给客户的动作，不是给客户算出这道题</strong></p>
+<p>上面两个情形演算给你看的是<strong>原理</strong>：为什么"贷款买 vs 全款买"的回报率会不一样，
+以及为什么不一样的方向可能相反。到了真客户面前，<strong>具体贷款利率、税务影响、
+现金流预测这些属于按揭经纪、会计师的专业范围</strong>，持牌代表的动作是帮客户理解
+"杠杆是把双刃剑，方向取决于借款成本和这栋楼的资本化率谁高谁低"，而不是自己
+拿计算器给出一个精确的权益回报率。<strong>卷面</strong>上这是概念题（正杠杆/负杠杆的方向判断），
+<strong>实务</strong>里这条界线和第十三章按揭利率换算的界线是同一条：理解原理，不替客户下结论。</p>
+</div>
+</div>
+<h2 id="_7">八、租约类型与持牌人的角色边界</h2>
+<p>商业收入物业的租约通常分<strong>毛租（gross lease）</strong>——业主承担全部运营费用，
+租金里已经包含了一份对费用的预估；与<strong>净租（net lease）</strong>——租客按比例分摊税、
+水电、维修等运营费用，细分到 single net（分摊部分费用）、triple net（分摊全部
+运营费用，业主只管结构性维修）、absolute net（连结构性维修也由租客承担）。
+<strong>判断一栋楼是毛租还是净租，直接决定了运营费用这一行该填多少</strong>——同样的租金收入，
+净租物业的业主承担费用远低于毛租物业，净营业收入自然更高。</p>
+<div class="vv-callout vv-callout--danger">
+<p><span class="vv-callout__icon">✕</span></p>
+<div>
+<p><strong>正式估价报告与持牌人的"市场比较分析"不是一回事</strong></p>
+<p>教材通篇用"the appraiser"这个称呼，并且专门标出"作为持牌人（As a Licensee）"
+的提示框，把估价师的工作和持牌代表的日常工作<strong>分开讲</strong>。持牌代表帮客户挂牌定价、
+帮买家出价参考，做的是<strong>市场比较分析（价格意见）</strong>；供按揭放款、遗产分割、诉讼这类
+用途的<strong>正式估价报告</strong>，通常需要具备专业估价资质的执业估价师出具。
+<strong>把自己给客户的价格意见说成"评估"或"估价"，模糊了这条边界，也模糊了责任归属。</strong></p>
+</div>
+</div>
+<h2 id="_8">九、柜台上怎么做</h2>
+<ol>
+<li><strong>算净营业收入时，先问清楚谁承担哪项运营费用</strong>——租约是毛租还是净租，
+   直接决定运营费用这一行该填多少，混淆两者会让净营业收入算出天差地别的结果。</li>
+<li><strong>潜在毛收入的增长假设，先查这栋楼是住宅出租还是商业出租</strong>：住宅出租物业受
+   《住宅租赁法》年度涨租上限约束（现行值见 ch06），<strong>在租客不换的情况下</strong>不能假设
+   按市场行情自由重新定价；换新租客时才能按市场租金重签。</li>
+<li><strong>物业含短租收入的，先核实合规性再采信这部分收入</strong>：主居所要求与省级登记制度
+   （见 ch06）直接决定了这部分收入能不能持续存在——把一份可能违规的短租收入
+   当长期净营业收入的一部分来估价，等于把估值建在一个随时可能被叫停的基础上。</li>
+<li><strong>空置率假设找权威的公开来源</strong>，比如加拿大按揭房屋公司（CMHC）逐年发布的
+   Rental Market Report，而不是凭印象或单一房东的说法；报告本身逐年更新，
+   <strong>只引用机构与报告名，具体空置率数字要查当年最新一期</strong>。</li>
+<li><strong>一次性维修支出不算进年度运营费用</strong>——比如屋顶马上要修的 $9,500，
+   是从算出来的市场价值里直接扣一次性的一整笔，不是当成"今年多付的维修费"
+   摊进 NOI（那样等于假设这笔钱每年都要花一次）。</li>
+<li><strong>给客户的是价格意见，不是正式估价报告</strong>——涉及按揭放款、遗产分割、诉讼这类
+   需要正式估价的场合，转介给持有专业估价资质的执业估价师。</li>
+</ol>
+<h2 id="_9">十、两个容易踩空的场景</h2>
+<p><strong>场景一：客户拿着一份"满租"的物业问"是不是已经卖到最高价了"</strong>。
+Priya 想卖掉手上一栋 8 单元的老公寓楼，物业满租，她觉得"满租就该卖高价"。
+持牌代表核实后发现，这栋楼的租金比同区同类物业低了约 15%——老租客在住多年，
+业主一直没涨到市场水平。持牌代表的动作不是替业主重新估价，而是解释<strong>满租不等于
+租金没有低估</strong>，并提示这一点会影响买家对净营业收入增长空间的判断：一个懂行的买家
+会把"租客更替后能涨到市场价"这件事算进他愿意出的价钱里，卖方也应该理解这一点，
+但具体的估价与谈判策略应转介给专业人士。</p>
+<p><strong>场景二：投资人问"我该全款买还是贷款买"</strong>。Marcus 看中一栋收入型物业，
+纠结要不要贷款。持牌代表可以用本篇第七节的原理框架帮他理解问题的形状——
+杠杆的方向取决于当前贷款利率相对这类物业资本化率的高低，而不是"贷款总是更划算"
+或"全款总是更稳"这种一概而论的说法——但<strong>具体该贷多少、选哪种利率产品、
+税务影响怎么算</strong>，这些问题要转介给按揭经纪、会计师，持牌代表的角色止步于
+"帮你理解这个决策在算什么，不替你做这个决策"。</p>
+<hr />
+<h2 id="_10">术语双语对照</h2>
+<table>
+<thead>
+<tr>
+<th>中文</th>
+<th>英文</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收益法 / 投资法</td>
+<td>Income (Investment) Approach</td>
+<td>只适用于能产生租金收入的物业</td>
+</tr>
+<tr>
+<td>潜在毛收入</td>
+<td>Gross Potential Revenue</td>
+<td>假设 100% 出租、按市场租金计</td>
+</tr>
+<tr>
+<td>有效毛收入</td>
+<td>Gross Realized Revenue / Effective Gross Income (EGI)</td>
+<td>潜在毛收入扣除空置与坏账准备后</td>
+</tr>
+<tr>
+<td>空置与坏账准备</td>
+<td>Vacancy and Bad Debt Allowance</td>
+<td>依长期市场空置经验判断，不是一项运营费用</td>
+</tr>
+<tr>
+<td>净营业收入</td>
+<td>Net Operating Income (NOI)</td>
+<td>有效毛收入扣除业主承担的运营费用</td>
+</tr>
+<tr>
+<td>固定费用 / 可变费用</td>
+<td>Fixed Expenses / Variable Expenses</td>
+<td>物业税、保险为固定；管理、水电等为可变</td>
+</tr>
+<tr>
+<td>资本化过程</td>
+<td>Capitalization Process</td>
+<td>把净营业收入换算成一个资本额（市场价值）</td>
+</tr>
+<tr>
+<td>资本化率</td>
+<td>Capitalization Rate (Cap Rate)</td>
+<td>从可比销售的 NOI÷成交价反推得到</td>
+</tr>
+<tr>
+<td>直接资本化法</td>
+<td>Direct Capitalization</td>
+<td>市场价值 = NOI ÷ 资本化率</td>
+</tr>
+<tr>
+<td>现金流折现法</td>
+<td>Discounted Cash Flow (DCF)</td>
+<td>教材明确排除在课程范围之外</td>
+</tr>
+<tr>
+<td>总收入乘数</td>
+<td>Gross Income Multiplier (GIM) / Gross Rent Multiplier (GRM)</td>
+<td>市场价值 = 有效毛收入 × 乘数，忽略费用差异</td>
+</tr>
+<tr>
+<td>权益回报率</td>
+<td>Equity Yield / Cash-on-Cash Return</td>
+<td>税前现金流 ÷ 自有资金投入</td>
+</tr>
+<tr>
+<td>正杠杆 / 负杠杆</td>
+<td>Positive / Negative Leverage</td>
+<td>借款成本低于/高于资本化率</td>
+</tr>
+<tr>
+<td>毛租 / 净租</td>
+<td>Gross Lease / Net Lease</td>
+<td>业主承担全部费用 / 租客按比例分摊费用</td>
+</tr>
+<tr>
+<td>三重净租</td>
+<td>Triple Net Lease</td>
+<td>租客承担全部运营费用，业主只管结构性维修</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vs">教材 vs 现行对照表</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>教材©2020 怎么说</th>
+<th>2026 现行是什么</th>
+<th>出处 UWS</th>
+<th>生效/核实日</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>教材明确声明现金流折现（DCF）与更复杂的多期分析"超出本课程范围"</td>
+<td>现行执业中，规模化收益物业与机构投资人的贷款审批常涉及杠杆分析、部分场合涉及 DCF 敏感性分析；持牌人虽不需要会算，但常被客户问到"贷款买 vs 全款买"这类杠杆问题——本篇第七节补了这块原理（自设算例，非教材内容）</td>
+<td>UWS-0191（间接支撑，见待核清单说明）</td>
+<td>2026-09-05</td>
+</tr>
+<tr>
+<td>2</td>
+<td>住宅出租物业的潜在毛收入被隐含假设为可按市场行情自由重估</td>
+<td>《住宅租赁法》s.22(3) 年度涨租上限（2026 年 2.3%、2027 年 2.2%）约束<strong>在租客不换情形下</strong>的涨租幅度；只有换新租客时才能重签市场租金——估价住宅收益物业时必须区分这两种情形</td>
+<td>UWS-0040</td>
+<td>2026-09-05</td>
+</tr>
+<tr>
+<td>3</td>
+<td>教材©2020 成书时完全没有短租监管，未涉及短租收入的合规性问题</td>
+<td>《Short-Term Rental Accommodations Act》主居所要求（非豁免地区只能在房东主居所+至多一个次要套房经营短租）与 2025-05-01 起的省级登记制度，直接限制了短租收入能否被计入长期净营业收入</td>
+<td>UWS-0046</td>
+<td>2026-09-05</td>
+</tr>
+<tr>
+<td>4</td>
+<td>教材提到空置率应参考"已发布的空置率、租金调查"，未点名具体来源</td>
+<td>加拿大最常引用的公开空置率来源是 CMHC 年度 Rental Market Report（覆盖主要城市，逐年更新）；本篇只引机构与报告名，具体空置率数字须查当年最新一期，不写死</td>
+<td>UWS-0191</td>
+<td>2026-09-05</td>
+</tr>
+</tbody>
+</table>
+<p><strong>第 1 条是提醒</strong>：这不是教材说错了，是教材主动划了边界；本篇在这块边界之外补的内容，
+本身没有一个"现行法规数字"可以核实——它是财务原理，不随时间过期，但也不该被误当成
+教材原文的一部分。</p>
+<h2 id="_11">源表（本篇判据）</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>事实</th>
+<th>一手源</th>
+<th>核实日</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>CMHC 每年发布 Rental Market Report，覆盖主要城市的空置率、租金增长与市场状况，是加拿大公开空置率数据的标准来源之一</td>
+<td>cmhc-schl.gc.ca /professionals/housing-markets-data-and-research/market-reports/rental-market-reports-major-centres（页面标题「2025 Rental Market Report」，年度滚动更新）（UWS-0191）</td>
+<td>2026-09-05</td>
+</tr>
+<tr>
+<td>2</td>
+<td>BC 年度住宅涨租上限：2026 年 2.3%、2027 年 2.2%，须提前 3 个整月书面通知，不得补涨、不得向上取整</td>
+<td>www2.gov.bc.ca /gov/content/housing-tenancy/residential-tenancies/rent-rtb/rent-increases（已在 ch06 核实，UWS-0040，主台账，本篇不重复登记）</td>
+<td>2026-09-05（ch06 核实日）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>《Short-Term Rental Accommodations Act》s.14(1) 主居所要求：非豁免地区短租只能在房东主居所内，或外加不超过一个次要套房</td>
+<td>bclaws.gov.bc.ca（已在 ch06 核实，UWS-0046，主台账，本篇不重复登记）</td>
+<td>2026-09-05（ch06 核实日）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>待核清单（禁在对外产物中出现的数字）</strong>：CMHC Rental Market Report 当年各城市具体空置率、
+平均租金数值（逐年逐市变化，本篇不给快照数）；情景算例①–④里的租金、费用、资本化率、
+贷款利率均为<strong>本篇自设的教学用整数</strong>，不是任何真实物业的数据，不得当作市场行情引用；
+管理费"3%–5% of 有效毛收入"这一惯常区间为教材原文表述的行业惯例，不是受监管的法定比例，
+不同市场、不同物业类型可能有出入。</p>
+    <div class="doc-nav"><a href="ch22-direct-comparison-cost.html">← 直接比较法与成本法：可比案例怎么选、怎么调、重置成本</a><a href="ch24-contract-to-completion.html" class="r">从签约到交割：过户流程、调整表与教材没写的三层义务（ →</a></div>
+    <div class="doc-src">来源：<code>self</code></div>
+  </article>
+  <aside class="doc-aside">
+    <details class="doc-toc-details" open>
+      <summary class="doc-toc-summary"><span>本页目录</span><span class="doc-toc-icon">▾</span></summary>
+      <div class="toc"><div class="toc">
+<ul>
+<li><a href="#_1">一、这一章要回答的问题：一栋楼的价格，到底是怎么算出来的</a></li>
+<li><a href="#_2">二、从潜在毛收入到净营业收入：四行算式，每一行都是判断题</a><ul>
+<li><a href="#1">情景算例①：从潜在毛收入算到净营业收入</a></li>
+</ul>
+</li>
+<li><a href="#_3">三、不算进净营业收入的四样东西，以及为什么</a></li>
+<li><a href="#_4">四、必要回报率：风险、管理、流动性三把尺子</a></li>
+<li><a href="#_5">五、资本化过程：市场价值 = 净营业收入 ÷ 资本化率</a><ul>
+<li><a href="#2">情景算例②：用两笔可比交易推出资本化率，并算出标的物业的市场价值</a></li>
+</ul>
+</li>
+<li><a href="#gim">六、快算法：总收入乘数（GIM）为什么会和直接资本化法算出不同答案</a><ul>
+<li><a href="#3gim-vs">情景算例③：GIM 快算 vs 直接资本化法，差在哪</a></li>
+</ul>
+</li>
+<li><a href="#_6">七、投资者视角：财务杠杆如何撬动权益回报率（教材范围之外的补充）</a><ul>
+<li><a href="#4">情景算例④：同一栋楼，两种贷款利率，权益回报率天差地别</a></li>
+</ul>
+</li>
+<li><a href="#_7">八、租约类型与持牌人的角色边界</a></li>
+<li><a href="#_8">九、柜台上怎么做</a></li>
+<li><a href="#_9">十、两个容易踩空的场景</a></li>
+<li><a href="#_10">术语双语对照</a></li>
+<li><a href="#vs">教材 vs 现行对照表</a></li>
+<li><a href="#_11">源表（本篇判据）</a></li>
+</ul>
+</div>
+</div>
+    </details>
+    
+    <h3>同板块</h3><ul class="rel"><li><a href="ch08-financial-statements.html">财务报表导论：看懂三张表，也看懂你自己经纪行的那三张表（Financial St</a></li><li><a href="ch21-appraisal-intro.html">地产估价导论：估价是什么、谁能做、柜台上怎么用（Introduction to </a></li><li><a href="ch22-direct-comparison-cost.html">直接比较法与成本法：可比案例怎么选、怎么调、重置成本怎么算（Direct Com</a></li></ul>
+    <a class="deck-cta" href="../slides.html?deck=ch23-income-approach"><b>先过讲义 →</b><span>28 张 · 含 6 道自测 · 约 24 分钟<br>一屏一个意思，比直接啃全文省力</span></a>
+    <a class="vv-btn vv-btn--primary" style="width:100%;margin-top:16px"
+       href="../drill.html?bp=valuation">练这个板块的题 →</a>
+  </aside>
+</div></main>
+<footer class="foot">
+  <p><b>微出国 · 学</b> — BC 地产牌照（Real Estate Trading Services）备考。<br>
+  内容是学习者视角的整理，不是 UBC Sauder 官方教材；考试以 UBC 现行课程为准，
+  实务以金融服务管理局 (BC Financial Services Authority, BCFSA) 与《地产服务法》(Real Estate Services Act, RESA) 现行文件为准。</p>
+</footer>
+<script>var UP_PATH="../";var BUILD_TIME="1788891005";</script>
+<script>
+if((localStorage.getItem('vv-theme')||'')==='dark')
+  document.documentElement.setAttribute('data-theme','dark');
+
+// 自动版本更新检测：对比 DOM 的 BUILD_TIME 与服务器最新 manifest.json，出现新版本时带时间戳无缝重载绕过 HTTP 磁盘缓存
+(function(){
+  function checkVersion(){
+    var up = typeof UP_PATH !== 'undefined' ? UP_PATH : '';
+    fetch(up + 'assets/manifest.json?t=' + Date.now(), { cache: 'no-store' }).then(function(r){
+      return r.ok ? r.json() : null;
+    }).then(function(m){
+      if(!m || !m.build_time) return;
+      var serverBuild = String(m.build_time);
+      var clientBuild = typeof BUILD_TIME !== 'undefined' ? String(BUILD_TIME) : '';
+      if(clientBuild && serverBuild && clientBuild !== serverBuild){
+        var reloaded = sessionStorage.getItem('vv_reloaded_build');
+        if(reloaded !== serverBuild){
+          sessionStorage.setItem('vv_reloaded_build', serverBuild);
+          var u = new URL(location.href);
+          u.searchParams.set('_v', serverBuild);
+          location.replace(u.href);
+        } else if(!document.getElementById('vv-update-banner')) {
+          var bar = document.createElement('div');
+          bar.id = 'vv-update-banner';
+          bar.className = 'vv-update-banner';
+          bar.innerHTML = '🎉 网站已更新到最新版本，建议按 <b>Ctrl+F5</b> (或 <b>Cmd+Shift+R</b>) 强制刷新页面。<button onclick="location.reload(true)">立即刷新</button>';
+          document.body.prepend(bar);
+        }
+      }
+    }).catch(function(){});
+  }
+
+  checkVersion();
+  document.addEventListener('visibilitychange', function(){
+    if(document.visibilityState === 'visible') checkVersion();
+  });
+  window.addEventListener('focus', checkVersion);
+  setInterval(checkVersion, 5 * 60 * 1000);
+})();
+
+// 页眉登录态。身份服务不在（纯静态托管、或还没起 dev-server）时静默跳过——
+// 内容页是公开的，永远不该因为身份服务缺席而坏掉。
+fetch('/api/me').then(function(r){return r.ok?r.json():null;}).then(function(m){
+  if(!m||document.getElementById('vv-auth'))return;
+  var n=document.querySelector('.vv-header nav');if(!n)return;
+  var e=document.createElement('span');e.id='vv-auth';e.className='auth';
+  e.innerHTML=m.loggedIn
+    ?'<span title="学习记录已跨设备同步">'+m.username+'</span> <a href="/auth/logout">退出</a>'
+    :'<a href="/auth/login?next='+encodeURIComponent(location.pathname)+'">登录</a>';
+  n.after(e);
+}).catch(function(){});
+
+// ── 阅读器增强：专注/最大化模式 & 键盘/手势切页 ──
+(function(){
+  var prevUrl = typeof PREV_URL !== 'undefined' ? PREV_URL : '';
+  var nextUrl = typeof NEXT_URL !== 'undefined' ? NEXT_URL : '';
+
+  function updateMaxBtns(isMax) {
+    var btns = document.querySelectorAll('.vv-reader-btn-max');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isMax ? '✕ 退出专注' : '⛶ 专注阅读';
+    }
+  }
+
+  window.toggleDocMaximize = function() {
+    var root = document.documentElement;
+    var isMax = root.classList.toggle('is-doc-maximized');
+    try { localStorage.setItem('vv_doc_maximized', isMax ? 'true' : 'false'); } catch(e){}
+    updateMaxBtns(isMax);
+  };
+
+  function updateAsideBtns(isCol) {
+    var btns = document.querySelectorAll('.vv-aside-btn');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isCol ? '◨ 展开侧栏' : '◧ 折叠侧栏';
+    }
+  }
+
+  window.toggleSidebarCollapse = function() {
+    var root = document.documentElement;
+    var isCol = root.classList.toggle('is-aside-collapsed');
+    try { localStorage.setItem('vv_aside_collapsed', isCol ? 'true' : 'false'); } catch(e){}
+    updateAsideBtns(isCol);
+  };
+
+  try {
+    if(localStorage.getItem('vv_aside_collapsed') === 'true') {
+      document.documentElement.classList.add('is-aside-collapsed');
+      setTimeout(function(){ updateAsideBtns(true); }, 0);
+    }
+  } catch(e){}
+
+  // 本页目录 <details> 状态记忆
+  var tocDet = document.querySelector('.doc-toc-details');
+  if(tocDet) {
+    try {
+      if(localStorage.getItem('vv_toc_open') === 'false') {
+        tocDet.removeAttribute('open');
+      }
+    } catch(e){}
+    tocDet.addEventListener('toggle', function() {
+      try { localStorage.setItem('vv_toc_open', tocDet.open ? 'true' : 'false'); } catch(e){}
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    var tag = (e.target && e.target.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prevUrl) {
+      location.href = prevUrl;
+    } else if (e.key === 'ArrowRight' && nextUrl) {
+      location.href = nextUrl;
+    } else if (e.key === 'f' || e.key === 'F' || e.key === 'm' || e.key === 'M') {
+      toggleDocMaximize();
+    } else if (e.key === 'Escape' && document.documentElement.classList.contains('is-doc-maximized')) {
+      toggleDocMaximize();
+    }
+  });
+
+  var touchStartX = 0, touchStartY = 0;
+  document.addEventListener('touchstart', function(e) {
+    if (e.touches && e.touches.length === 1) {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  document.addEventListener('touchend', function(e) {
+    if (!e.changedTouches || e.changedTouches.length !== 1) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    var dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > 90 && Math.abs(dy) < 60) {
+      if (dx > 0 && prevUrl) {
+        location.href = prevUrl;
+      } else if (dx < 0 && nextUrl) {
+        location.href = nextUrl;
+      }
+    }
+  }, { passive: true });
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body></html>
