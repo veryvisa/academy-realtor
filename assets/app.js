@@ -38,26 +38,35 @@ let COURSE_KEY = "bc-level1";
 let KEY = keysFor(COURSE_KEY);
 
 /** 把无前缀的旧记录搬进 bc-level1 的命名空间。只搬一次，且**不删原件**。 */
-function migrateLegacy() {
+function migrateLegacy(legacyKeys = LEGACY_KEYS) {
   try {
     for (const f of ["attempts", "reviews", "prefs", "events"]) {
-      if (localStorage.getItem(KEY[f]) === null && localStorage.getItem(LEGACY_KEYS[f]) !== null) {
-        localStorage.setItem(KEY[f], localStorage.getItem(LEGACY_KEYS[f]));
+      if (localStorage.getItem(KEY[f]) === null && localStorage.getItem(legacyKeys[f]) !== null) {
+        localStorage.setItem(KEY[f], localStorage.getItem(legacyKeys[f]));
       }
     }
     for (let i = 0; i < localStorage.length; i++) {
       const k = localStorage.key(i);
-      if (!k || !k.startsWith(LEGACY_KEYS.deck) || k.startsWith("vv.bc-level1.")) continue;
-      const nk = KEY.deck + k.slice(LEGACY_KEYS.deck.length);
+      if (!k || !k.startsWith(legacyKeys.deck) || k.startsWith("vv.bc-level1.")) continue;
+      const nk = KEY.deck + k.slice(legacyKeys.deck.length);
       if (localStorage.getItem(nk) === null) localStorage.setItem(nk, localStorage.getItem(k));
     }
-  } catch { /* 隐私模式下 localStorage 会抛。学习照常，只是记不住 */ }
+    return true;
+  } catch { /* 隐私模式下 localStorage 会抛。学习照常，只是记不住 */ return false; }
 }
 
 function setCourse(c) {
   COURSE_KEY = c || "bc-level1";
   KEY = keysFor(COURSE_KEY);
   if (COURSE_KEY === "bc-level1") migrateLegacy();
+  if (COURSE_KEY === "tax-personal") {
+    try {
+      const marker = "vv.tax-personal.legacy-tax-migrated";
+      if (localStorage.getItem(marker) === null && migrateLegacy(keysFor("tax"))) {
+        localStorage.setItem(marker, "1");
+      }
+    } catch { /* 无持久存储时仍可学习 */ }
+  }
 }
 
 /* ─────────────── 存储 ─────────────── */
@@ -488,7 +497,7 @@ function renderDrill() {
 
   function controls() {
     const available = drillQuestions();
-    const bps = ["all", ...Object.keys(WEIGHTS)];
+    const bps = ["all", ...Object.keys(examMode() === "study_only" ? MANIFEST.blueprint : WEIGHTS)];
     const types = [["all", "全部题型"], ["except", "找例外"],
                    ["match", "编号配对"], ["mcq", "常规单选"], ["scenario", "情景判断与计算"],
                    ["discriminate", "辨析"], ["bilingual", "中英术语"]];
@@ -594,7 +603,7 @@ function renderDrill() {
         这是最危险的一类洞——在考卷上是一分之差，在客户面前是天壤之别。
         它们已经排到你队列的最前面。</div></div>` : ""}
       <div class="row"><button class="vv-btn vv-btn--primary" id="again">再来一轮</button>
-      <a class="vv-btn vv-btn--secondary" href="progress.html">看进度</a></div></div>`;
+      <a class="vv-btn vv-btn--secondary" href="${examMode() === "study_only" ? "index.html" : "progress.html"}">${examMode() === "study_only" ? "回课程" : "看进度"}</a></div></div>`;
     document.getElementById("again").onclick = buildSession;
   }
 
@@ -687,6 +696,10 @@ function allocateQuota(weights, total) {
 
 function renderExam() {
   const root = document.getElementById("exam");
+  if (MANIFEST.status === "study_only" || examMode() === "study_only") {
+    root.innerHTML = '<h2>本课仅开放学习与练习</h2><p>官方考试规格待核，未启用计时、及格线或模考。请使用<a href="drill.html">逐题练习</a>。</p>';
+    return;
+  }
   let paper = [], answers = {}, started = null, submitted = false, tick = null;
   /**
    * 每题的作答行为。模考是整卷一屏，没有「这题渲染了」这个时刻，
@@ -1076,8 +1089,10 @@ function renderExam() {
 /* ─────────────── 进度 ─────────────── */
 function renderProgress() {
   const root = document.getElementById("progress");
-  const at = store.attempts();
-  const rv = store.reviews();
+  // Legacy tax records remain exportable, but another course must not inflate this dashboard.
+  const ids = new Set(QUESTIONS.map(q => q.id));
+  const at = store.attempts().filter(a => ids.has(a.cardId));
+  const rv = Object.fromEntries(Object.entries(store.reviews()).filter(([id]) => ids.has(id)));
   const prefs = store.prefs();
   const daysLeft = Math.ceil((new Date(prefs.examDate) - new Date()) / 86400000);
 
