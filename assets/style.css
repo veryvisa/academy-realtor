@@ -918,3 +918,135 @@ ul.wrong .meta { display: block; font-size: var(--vv-fs-xs); color: var(--vv-tex
   font-size: var(--vv-fs-xs);
 }
 
+
+/* ── 知识卡与封面（用户令 2026-09-20：每页配知识卡；点图开弹窗或详情页，绝不裸开原图；图做封面）──
+   展示层正本＝site/cards.py。样式只用 tokens.css 的 --vv-* 变量，所以浅色/深色两套主题自动都对。
+   照 youth-care-guide/src/components/GuideLayout.astro 的结构移植，变量换成本站的设计系统。 */
+
+/* 封面：全宽、图做背景、标题落图上 */
+/* main 自身没有内边距，各版块各自居中，所以封面天然就是整幅宽 */
+main > section.cover { max-width: none; margin: 0 0 24px; padding: 0; }
+.cover { position: relative; isolation: isolate; min-height: 340px; display: flex; align-items: flex-end;
+  color: #fff; background: #14243A; overflow: hidden; }
+.cover.tall { min-height: 480px; }
+.cover.short { min-height: 230px; }
+.cover-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  object-position: center; z-index: -2; }
+/* 底图是知识卡缩略图时：卡上有字，重模糊＋压暗＋放大，只当纹理用
+   （配方标定自 business/bin/cover_text_gate.py 的 OCR 门） */
+.cover.from-card .cover-bg { filter: blur(14px) saturate(.7) brightness(.8); transform: scale(1.08);
+  object-position: top; }
+.cover::before { content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(90deg, rgba(20,32,54,.92) 0%, rgba(20,32,54,.78) 46%, rgba(20,32,54,.34) 100%),
+              linear-gradient(180deg, rgba(20,32,54,0) 36%, rgba(20,32,54,.66) 100%); }
+.cover.from-card::before { background: linear-gradient(90deg, rgba(20,32,54,.94) 0%, rgba(20,32,54,.86) 50%, rgba(20,32,54,.62) 100%),
+              linear-gradient(180deg, rgba(20,32,54,.2) 0%, rgba(20,32,54,.8) 100%); }
+.cover-in { width: 100%; max-width: 1080px; margin: 0 auto; padding: 36px 20px 30px; }
+.cover-eyebrow { margin: 0 0 6px; font-size: var(--vv-fs-xs); letter-spacing: .08em; font-weight: 700;
+  color: var(--vv-green-300); }
+.cover h1 { font-size: clamp(26px, 4.6vw, 44px); line-height: 1.16; letter-spacing: -.02em;
+  margin: 4px 0 10px; max-width: 840px; text-shadow: 0 2px 14px rgba(0,0,0,.34); color: #fff; }
+.cover .cover-lead { font-size: var(--vv-fs-base); color: rgba(255,255,255,.9); max-width: 760px; margin: 0; }
+.cover .crumb, .cover .crumb a { color: rgba(255,255,255,.82); }
+.cover .doc-meta .vv-badge { background: rgba(255,255,255,.16); border-color: rgba(255,255,255,.4); color: #fff; }
+.cover .vv-btn--secondary { background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.45); color: #fff; }
+.cover .vv-btn--primary { background: #fff; color: #14243A; border-color: #fff; }
+
+/* 卡片网格 */
+.cards { margin: 28px 0; }
+.cards-lead { color: var(--vv-text-muted); margin: 4px 0 14px; font-size: var(--vv-fs-sm); }
+.cards-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; align-items: start; }
+.kcard { margin: 0; border: 1px solid var(--vv-border); border-radius: 14px; background: var(--vv-bg-raised);
+  overflow: hidden; box-shadow: var(--vv-shadow-1); }
+.kcard img { display: block; width: 100%; height: auto; aspect-ratio: 3/4; object-fit: cover;
+  border-bottom: 1px solid var(--vv-border); background: #fff; }
+.kcard figcaption { padding: 14px 16px 16px; }
+.kcard .takeaway { display: block; font-weight: 700; font-size: var(--vv-fs-sm); line-height: 1.5;
+  color: var(--vv-text); margin-bottom: 8px; }
+.guide { list-style: none; margin: 0; padding: 0; font-size: var(--vv-fs-xs); line-height: 1.65; color: var(--vv-text); }
+.guide li { display: grid; grid-template-columns: 3.2em 1fr; gap: 8px; margin: 4px 0; }
+.guide span { font-size: .72em; font-weight: 700; letter-spacing: .06em; color: var(--vv-warn);
+  padding-top: 3px; white-space: nowrap; }
+.kcard-pic { position: relative; display: block; cursor: zoom-in; }
+.kcard-pic .zoom { position: absolute; right: 10px; bottom: 10px; font-size: var(--vv-fs-xs);
+  padding: 3px 9px; border-radius: 999px; background: rgba(20,32,54,.82); color: #fff; opacity: 0;
+  transition: opacity .15s; }
+.kcard-pic:hover .zoom, .kcard-pic:focus-visible .zoom { opacity: 1; }
+@media (hover: none) { .kcard-pic .zoom { opacity: .85; } }
+.kcard-more { display: inline-block; margin-top: 8px; font-size: var(--vv-fs-xs); font-weight: 700; }
+.cards-toc { display: flex; flex-wrap: wrap; gap: 8px; }
+.cards-toc a { font-size: var(--vv-fs-xs); padding: 5px 11px; border: 1px solid var(--vv-border);
+  border-radius: 999px; background: var(--vv-bg-raised); text-decoration: none; color: var(--vv-text); }
+
+/* 弹窗幻灯（同页一组：← → 键、滑动、Esc／背景／返回键关闭；#look-<key> 深链接） */
+body.lb-open { overflow: hidden; }
+.lb { border: 0; padding: 0; margin: 0; width: 100vw; height: 100vh; max-width: none; max-height: none;
+  background: rgba(11,25,38,.95); color: #fff; }
+.lb::backdrop { background: rgba(11,25,38,.7); }
+.lb-body { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 22px; height: 100%;
+  padding: 42px 58px 22px; align-items: center; }
+.lb-fig { margin: 0; height: 100%; display: flex; align-items: center; justify-content: center; }
+.lb-img { max-width: 100%; max-height: calc(100vh - 80px); width: auto; height: auto; border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.5); background: #fff; }
+.lb-cap { max-height: calc(100vh - 80px); overflow: auto; background: var(--vv-bg-raised); color: var(--vv-text);
+  border-radius: 14px; padding: 18px 20px; }
+.lb-count { font-size: var(--vv-fs-xs); color: var(--vv-warn); letter-spacing: .06em; font-weight: 700; margin: 0 0 6px; }
+.lb-title { margin: 0 0 4px; font-size: var(--vv-fs-lg); }
+.lb-sub { margin: 0 0 10px; color: var(--vv-text-muted); font-size: var(--vv-fs-xs); }
+.lb-take { display: block; font-weight: 700; font-size: var(--vv-fs-sm); line-height: 1.5; margin-bottom: 8px; }
+.lb-acts { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0 2px; }
+.lb-acts .vv-btn { margin: 0; font-size: var(--vv-fs-xs); padding: 7px 11px; }
+/* ⚠️ 全站有一条 `.vv a { color: var(--vv-link) }`（0,1,1），比 `.vv-btn--primary`（0,1,0）更强，
+   于是「当按钮用的 <a>」会被染成链接蓝，压在同色背景上＝一个没有字的蓝药丸
+   （2026-09-20 弹窗上实见）。site.css 已经为 .doc-aside 与 .hero 各抢救过一次，
+   这里给弹窗与卡详情页再抢一次；封面那两条本来就是 (0,2,0)，不用补。 */
+.lb-acts .vv-btn--primary, .cd-text .vv-btn--primary { color: var(--vv-accent-ink); }
+.lb-acts .vv-btn--secondary, .cd-text .vv-btn--secondary { color: var(--vv-link); }
+.lb-hint { font-size: var(--vv-fs-xs); color: var(--vv-text-muted); margin: 6px 0 0; }
+.lb-x, .lb-nav { position: absolute; z-index: 2; border: 0; background: rgba(255,255,255,.16); color: #fff;
+  border-radius: 999px; cursor: pointer; font-size: 22px; line-height: 1; }
+.lb-x { top: 12px; right: 14px; width: 40px; height: 40px; }
+.lb-nav { top: 50%; transform: translateY(-50%); width: 48px; height: 64px; font-size: 34px; }
+.lb-prev { left: 10px; } .lb-next { right: 10px; }
+.lb-x:hover, .lb-nav:hover { background: rgba(255,255,255,.32); }
+
+/* 卡详情页 */
+.card-detail { display: grid; grid-template-columns: minmax(280px, .95fr) minmax(0, 1.05fr); gap: 32px;
+  align-items: start; }
+.cd-pic { margin: 0; border-radius: 14px; overflow: hidden; box-shadow: var(--vv-shadow-2); background: #fff; }
+.cd-pic img { display: block; width: 100%; height: auto; }
+.cd-sub { color: var(--vv-text-muted); font-size: var(--vv-fs-sm); margin: 0 0 8px; }
+.cd-text .takeaway { display: block; font-weight: 700; font-size: var(--vv-fs-base); line-height: 1.5;
+  color: var(--vv-text); margin: 0 0 12px; padding: 12px 16px; border-left: 4px solid var(--vv-warn);
+  background: var(--vv-bg-subtle); border-radius: 0 10px 10px 0; }
+.cd-text .guide { font-size: var(--vv-fs-sm); }
+.cd-text .row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.cd-note { font-size: var(--vv-fs-xs); color: var(--vv-text-muted); margin-top: 18px; }
+.cd-pager { display: flex; justify-content: space-between; gap: 12px; margin-top: 22px; padding-top: 14px;
+  border-top: 1px solid var(--vv-border); font-size: var(--vv-fs-xs); }
+.cd-strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.cd-strip a { display: block; text-decoration: none; color: var(--vv-text); font-size: var(--vv-fs-xs);
+  border: 1px solid var(--vv-border); border-radius: 12px; background: var(--vv-bg-raised); overflow: hidden; }
+.cd-strip img { display: block; width: 100%; height: auto; aspect-ratio: 3/4; object-fit: cover;
+  border-bottom: 1px solid var(--vv-border); background: #fff; }
+.cd-strip span { display: block; padding: 8px 10px; line-height: 1.4; }
+
+@media (max-width: 900px) {
+  .cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lb-body { grid-template-columns: 1fr; grid-template-rows: minmax(0, 1fr) auto; padding: 52px 10px 10px; gap: 10px; }
+  .lb-img { max-height: 54vh; }
+  .lb-cap { max-height: 36vh; padding: 12px 14px; }
+  .lb-nav { width: 40px; height: 52px; font-size: 28px; top: 34%; }
+  .card-detail { grid-template-columns: 1fr; }
+  .cd-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  main > section.cover { margin: 0 0 20px; }
+  .cover { min-height: 260px; } .cover.tall { min-height: 320px; } .cover.short { min-height: 200px; }
+  .cover::before { background: linear-gradient(180deg, rgba(20,32,54,.45) 0%, rgba(20,32,54,.9) 100%); }
+  .cover.from-card::before { background: linear-gradient(180deg, rgba(20,32,54,.66) 0%, rgba(20,32,54,.94) 100%); }
+  .cover-in { padding: 24px 16px 22px; }
+  .cards-grid { grid-template-columns: 1fr; }
+  .cd-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lb-hint { display: none; }
+}
