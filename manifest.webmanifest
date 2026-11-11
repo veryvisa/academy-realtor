@@ -1,0 +1,11 @@
+{
+ "name": "微出国·学 · BC 地产牌照（Trading Services）",
+ "short_name": "BC 地产牌照（Trad",
+ "start_url": "./index.html",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#ffffff",
+ "theme_color": "#0f172a",
+ "lang": "zh-CN",
+ "icons": []
+}
